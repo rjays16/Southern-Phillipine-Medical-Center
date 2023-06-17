@@ -1,0 +1,9 @@
+1. Go to command line.
+2. Type regedit
+3. Go to key HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+4. Create new string value and type name for program to start up;
+5. Modify value of string by typing full path of exectuble program;
+
+
+value name : XAMPP 
+value data : C:\start.bat
