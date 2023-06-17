@@ -1,0 +1,3 @@
+/*[3:34:26 PM][8 ms]*/ INSERT INTO `hisdb`.`seg_rep_params` (`param_id`, `parameter`, `param_type`, `choices`,`ordering`) VALUES ('type_stock', 'Type of Stock', 'option', '\'all-All\',\'fs-Forward Stocking\',\'rg-Regular Item\'','4'); 
+/*[3:41:45 PM][3 ms]*/ UPDATE `hisdb`.`seg_rep_params` SET `ordering` = '5' WHERE `param_id` = 'time'; 
+/*[4:12:47 PM][3 ms]*/ INSERT INTO `hisdb`.`seg_rep_template_params` (`report_id`, `param_id`) VALUES ('PH_list_meds', 'type_stock'); 

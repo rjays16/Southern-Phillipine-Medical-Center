@@ -1,0 +1,4 @@
+insert into `hisdb`.`seg_rep_templates_registry` (`report_id`, `rep_group`, `rep_name`, `rep_description`, `rep_script`, `rep_dept_nr`, `rep_category`, `with_template`, `template_name`) values ('bb_grand_total_source_type_compo', 'Hospital Operations', 'Grand Total According to Source, Type, and Component (Blood Utilization Report)', 'Grand Total According to Source, Type, and Component (Blood Utilization Report)', 'BB_Grand_Total_Source_Type_Component', '190', 'HOSP', '1', 'BB_Grand_Total_Source_Type_Component');
+insert into `hisdb`.`seg_rep_template_params` (`report_id`, `param_id`) values ('bb_grand_total_source_type_compo', 'bb_trxn');
+
+update `hisdb`.`seg_blood_component` set `long_name` = 'Cryoprecipitate' where `id` = 'CRYO' and `component_group` = 'plasma';

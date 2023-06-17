@@ -1,0 +1,2 @@
+INSERT INTO `seg_rep_templates_dept` (`id`, `report_id`, `dept_nr`, `template_name`) VALUES ('75', 'causes_mortality', '182', 'PSY_Causes_Confinement1'); 
+INSERT INTO `seg_rep_templates_dept_params` (`id`, `param`, `status`) VALUES ('75', 'date_based', 'included')

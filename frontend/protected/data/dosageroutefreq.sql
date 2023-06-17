@@ -1,0 +1,1 @@
+/*[4:35:57 PM][220 ms]*/ ALTER TABLE `hisdb`.`care_pharma_outside_order` ADD COLUMN `dosage` TEXT NULL AFTER `brand_name`; 

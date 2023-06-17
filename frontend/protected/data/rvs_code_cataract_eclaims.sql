@@ -1,0 +1,1 @@
+INSERT INTO `hisdb`.`care_config_global` (`type`, `value`) VALUES ('rvs_code_cataract_eclaims', '66983,66984,66987')

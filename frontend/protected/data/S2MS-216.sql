@@ -1,0 +1,1 @@
+/*[1:48:24 PM][307 ms]*/ ALTER TABLE `hisdb`.`care_users` ADD COLUMN `old_name` VARCHAR(60) NULL AFTER `lock_duration`; 

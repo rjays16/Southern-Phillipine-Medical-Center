@@ -1,0 +1,3 @@
+ALTER TABLE `hisdb`.`seg_cert_death_fetal` ADD COLUMN `m_residence_country` VARCHAR(20) NULL AFTER `create_dt`;
+ALTER TABLE `hisdb`.`seg_cert_death_fetal` ADD COLUMN `p_residence_mun` INT(11) NULL AFTER `m_residence_country`, ADD COLUMN `p_residence_prov` INT(11) NULL AFTER `p_residence_mun`, ADD COLUMN `p_residence_country` VARCHAR(20) NULL AFTER `p_residence_prov`; 
+ALTER TABLE `hisdb`.`seg_cert_death_fetal` ADD COLUMN `attend` TINYINT(1) NULL AFTER `p_residence_country`;

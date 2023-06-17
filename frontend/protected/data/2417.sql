@@ -1,0 +1,1 @@
+/*[6:21:11 PM][3 ms]*/ INSERT INTO `hisdb`.`seg_dashlet_classes` (`id`, `name`, `icon`, `category`, `class_path`, `class_file`) VALUES ('MedicalAbstract', 'Medical Abstract', 'page_edit.png', 'Patient', 'modules/dashboard/dashlets/MedicalAbstract/', 'MedicalAbstract.php'); 

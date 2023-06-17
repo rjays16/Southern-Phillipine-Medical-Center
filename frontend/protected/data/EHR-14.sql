@@ -1,0 +1,2 @@
+ALTER TABLE `hisdb`.`seg_confinement_tracker` ADD COLUMN `actual_rem_days` INT(10) NULL AFTER `rem_days`;
+ALTER TABLE `hisdb`.`seg_confinement_tracker` CHANGE `actual_rem_days` `actual_rem_days` VARCHAR(10) NULL; 

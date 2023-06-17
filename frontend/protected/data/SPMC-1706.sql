@@ -1,0 +1,5 @@
+/*[3:20:39 PM][4 ms]*/ INSERT INTO `hisdb4dev`.`seg_rep_params` (`param_id`, `parameter`, `param_type`, `choices`) VALUES ('consul_insti', 'Consulting Institute', 'option', '\'all-All\',\'heart-Heart Institute\',\'cancer-Cancer Institute\',\'opdj-OPD(JICA)\'');
+/*[8:15:22 AM][4 ms]*/ INSERT INTO `hisdb4dev`.`seg_rep_template_params` (`report_id`, `param_id`) VALUES ('leading_opd_consultation', 'consul_insti'); 
+/*[8:24:14 AM][4 ms]*/ INSERT INTO `hisdb4dev`.`seg_rep_template_params` (`report_id`, `param_id`) VALUES ('opd_rendered', 'consul_insti'); 
+/*[8:25:05 AM][5 ms]*/ INSERT INTO `hisdb4dev`.`seg_rep_template_params` (`report_id`, `param_id`) VALUES ('opd_summary', 'consul_insti'); 
+/*[8:25:35 AM][5 ms]*/ INSERT INTO `hisdb4dev`.`seg_rep_template_params` (`report_id`, `param_id`) VALUES ('opd_demographic', 'consul_insti'); 

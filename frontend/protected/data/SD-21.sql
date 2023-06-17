@@ -1,0 +1,2 @@
+/*[3:08:48 AM][4 ms]*/ UPDATE `hisdb`.`seg_hcare_confinetype` SET `amountlimit` = '50000.00' WHERE `bsked_id` = '77' AND `confinetype_id` = '7'; 
+/*[3:11:00 AM][3 ms]*/ UPDATE `hisdb`.`seg_hcare_confinetype` SET `amountlimit` = '50000.00' WHERE `bsked_id` = '78' AND `confinetype_id` = '7'; 

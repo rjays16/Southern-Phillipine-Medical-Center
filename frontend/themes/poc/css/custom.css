@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 18, 2019, 9:33:41 PM
+    Author     : Bong
+*/
+.modal-dialog {
+    width: 800px !important;
+    float: left !important;
+    margin-left: 2em !important;
+}
+
+.modal-xlg {
+    width: 800px;
+    margin: auto;
+}
+
+.modal-header {
+    padding:9px 15px !important;
+    border-bottom:1px solid #eee !important;
+    background-color: #0480be !important;
+    -webkit-border-top-left-radius: 5px !important;
+    -webkit-border-top-right-radius: 5px !important;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px !important;
+     border-top-right-radius: 5px !important;
+     display: inline-block !important;
+ }
+
+ h4.modal-title {
+     margin: auto;
+ } 
+    
+.modal  {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+.modal-content {
+    /* 80% of window height */
+/*    height: 60%;*/
+    background-color:#BBD6EC;
+}  
+    
+.active-tab {
+   color: white !important;
+   background-color: #0480be !important;
+}
+
+.withBreaks { 
+    word-wrap:break-word; 
+}
+    
+p.small {
+    line-height: 0.2;
+} 

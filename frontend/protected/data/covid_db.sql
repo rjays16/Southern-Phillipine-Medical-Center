@@ -1,0 +1,1 @@
+/*[6:13:12 AM][46 ms]*/ INSERT INTO `hisdb`.`care_config_global` (`type`, `value`) VALUES ('covid_season', '2020-12-31'); 

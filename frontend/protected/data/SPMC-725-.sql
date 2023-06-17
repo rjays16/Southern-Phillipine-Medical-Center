@@ -1,0 +1,1 @@
+INSERT INTO `seg_define_config` (`param`, `value`) VALUES ('SOA_VERSION_2', '2018-09-10'); 

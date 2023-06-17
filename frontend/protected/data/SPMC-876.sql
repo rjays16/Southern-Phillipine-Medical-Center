@@ -1,0 +1,1 @@
+ALTER TABLE `hisdb`.`seg_dialysis_request` ADD COLUMN `is_released` TINYINT(1) DEFAULT 0 NULL AFTER `with_lab`;

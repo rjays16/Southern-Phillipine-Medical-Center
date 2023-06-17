@@ -1,0 +1,14 @@
+UPDATE `hisdb`.`seg_pharma_areas` SET `is_deleted` = '1' WHERE `area_code` = '2E';
+UPDATE `hisdb`.`seg_pharma_areas` SET `is_deleted` = '1' WHERE `area_code` = 'A'; 
+UPDATE `hisdb`.`seg_pharma_areas` SET `is_deleted` = '1' WHERE `area_code` = 'A-I'; 
+UPDATE `hisdb`.`seg_pharma_areas` SET `is_deleted` = '1' WHERE `area_code` = 'C'; 
+UPDATE `hisdb`.`seg_pharma_areas` SET `is_deleted` = '1' WHERE `area_code` = 'C/MO'; 
+UPDATE `hisdb`.`seg_pharma_areas` SET `is_deleted` = '1' WHERE `area_code` = 'C1'; 
+UPDATE `hisdb`.`seg_pharma_areas` SET `is_deleted` = '1' WHERE `area_code` = 'CW1'; 
+UPDATE `hisdb`.`seg_pharma_areas` SET `is_deleted` = '1' WHERE `area_code` = 'I1'; 
+UPDATE `hisdb`.`seg_pharma_areas` SET `is_deleted` = '1' WHERE `area_code` = 'MW2'; 
+UPDATE `hisdb`.`seg_pharma_areas` SET `is_deleted` = '1' WHERE `area_code` = 'MW3'; 
+UPDATE `hisdb`.`seg_pharma_areas` SET `is_deleted` = '1' WHERE `area_code` = 'O2'; 
+UPDATE `hisdb`.`seg_pharma_areas` SET `is_deleted` = '1' WHERE `area_code` = 'OT';
+UPDATE `hisdb`.`seg_pharma_areas` SET `is_deleted` = '1' WHERE `area_code` = 'OTSU'; 
+UPDATE `hisdb`.`seg_pharma_areas` SET `is_deleted` = '1' WHERE `area_code` = 'R/B'; 

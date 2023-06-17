@@ -1,0 +1,1 @@
+CREATE TABLE `hisdb`.`pharma_default_areas`( `personell_nr` VARCHAR(255), `area_code` VARCHAR(255), `default_area` VARCHAR(255) ); 

@@ -1,0 +1,11 @@
+/*[27-Apr 3:57:58 pm][33 ms]*/ INSERT INTO `hisdb`.`seg_eclaims_config` (`type`) VALUES ('eclaims_cf4_no_med_drug_code'); 
+/*[27-Apr 3:57:58 pm][33 ms]*/ SHOW WARNINGS; 
+/*[27-Apr 3:58:04 pm][32 ms]*/ INSERT INTO `hisdb`.`seg_eclaims_config` (`type`) VALUES ('eclaims_cf4_no_med_gen_code'); 
+/*[27-Apr 3:58:04 pm][36 ms]*/ SHOW WARNINGS; 
+/*[27-Apr 3:58:09 pm][39 ms]*/ INSERT INTO `hisdb`.`seg_eclaims_config` (`type`) VALUES ('eclaims_cf4_no_med_generic'); 
+/*[27-Apr 3:58:09 pm][90 ms]*/ SHOW WARNINGS; 
+/*[27-Apr 3:58:18 pm][33 ms]*/ INSERT INTO `hisdb`.`seg_eclaims_config` (`type`) VALUES ('eclaims_cf4_vital_signs_implementation_date'); 
+/*[27-Apr 3:58:18 pm][34 ms]*/ SHOW WARNINGS; 
+/*[27-Apr 3:58:28 pm][32 ms]*/ UPDATE `hisdb`.`seg_eclaims_config` SET `value` = 'NOMED 0000000000000000000000000' , `active` = '1' WHERE `id` = '15'; 
+/*[27-Apr 3:58:34 pm][39 ms]*/ UPDATE `hisdb`.`seg_eclaims_config` SET `value` = 'NOMED' WHERE `id` = '16'; 
+/*[27-Apr 3:58:36 pm][33 ms]*/ UPDATE `hisdb`.`seg_eclaims_config` SET `value` = '2021-03-01' WHERE `id` = '18'; 

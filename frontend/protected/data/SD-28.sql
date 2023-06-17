@@ -1,0 +1,3 @@
+INSERT INTO `seg_rep_templates_dept` (`id`, `report_id`, `dept_nr`, `template_name`) VALUES ('66', 'ipd_demog', '182', 'PSY_Patient_Demographic'); 
+INSERT INTO `seg_rep_templates_dept_params` (`id`, `param`, `status`) VALUES ('66', 'date_based', 'included'); 
+ ALTER TABLE `seg_encounter_profile` ADD COLUMN `mun_nr` INT(11) NULL AFTER `date_birth`, ADD COLUMN `prov_nr` INT(11) NULL AFTER `mun_nr`, ADD COLUMN `region_nr` INT(11) NULL AFTER `prov_nr`;

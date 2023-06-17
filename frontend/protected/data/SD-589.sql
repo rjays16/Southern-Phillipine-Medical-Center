@@ -1,0 +1,3 @@
+/*[21-Jan 1:59:42 PM][688 ms]*/ CREATE TABLE `hisdb`.`seg_user_token`( `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT, `personnel_nr` INT(10) UNSIGNED NOT NULL, `token` VARCHAR(255) NOT NULL, `create_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (`id`) );
+/*[7-Jun 5:42:59 AM][97 ms]*/ INSERT INTO `hisdb`.`care_config_global` (`type`, `value`) VALUES ('rep_public_ip_port_forward', 'http://122.55.59.242:81/hisdmc');
+/*[14-Jun 7:42:06 PM][410 ms]*/ INSERT INTO `hisdb`.`care_config_global` (`type`, `value`) VALUES ('redirect_report', '1');

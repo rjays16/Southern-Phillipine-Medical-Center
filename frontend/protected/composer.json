@@ -1,0 +1,33 @@
+{
+    "name": "segworks/his",
+    "authors": [
+        {
+            "name": "Alvin Quinones",
+            "email": "ajmquinones@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "type": "project",
+    "keywords": [
+        "his",
+        "emr",
+        "medical",
+        "healthcare"
+    ],
+    "license": "proprietary",
+    "require": {
+        "fzaninotto/faker": "^1.6",
+        "robmorgan/phinx": "^0.5.0",
+        "intervention/image": "1.*",
+        "phpoffice/phpexcel": "^1.8",
+        "mrferos/hl7-parser": "^1.0",
+        "react/socket": "0.8.11",
+        "pimple/pimple": "^3.0",
+        "vlucas/phpdotenv": "^2.4",
+        "league/event": "^0.1.0"		
+    },
+    "require-dev": {
+        "phpmd/phpmd": "^2.4",
+        "FriendsOfPHP/PHP-CS-Fixer": "^1.11"
+    }
+}

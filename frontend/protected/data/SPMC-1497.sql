@@ -1,0 +1,1 @@
+UPDATE `hisdb`.`seg_signatory` SET `personell_nr` = '100219' WHERE `personell_nr` = '101293' AND `document_code` = 'socserv'; 

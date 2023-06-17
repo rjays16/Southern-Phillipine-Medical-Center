@@ -1,0 +1,1 @@
+UPDATE `hisdb`.`seg_rep_templates_registry` SET `rep_dept_nr` = '144' WHERE `report_id` = 'DialysisReport';

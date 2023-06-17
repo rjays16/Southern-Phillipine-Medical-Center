@@ -1,0 +1,1 @@
+/*[3:47:18 AM][117410 ms]*/ ALTER TABLE `hisdb`.`care_encounter_notes` ADD COLUMN `avail_meds` TEXT NULL AFTER `is_vital`, ADD COLUMN `gadgets` TEXT NULL AFTER `avail_meds`, ADD COLUMN `problems` TEXT NULL AFTER `gadgets`, ADD COLUMN `actions` TEXT NULL AFTER `problems`;

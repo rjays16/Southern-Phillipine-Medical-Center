@@ -1,0 +1,2 @@
+CREATE TABLE `hisdb`.`seg_report_admission_census`( `encounter_nr` VARCHAR(15), `no_encounter` INT(15) ); 
+CREATE TABLE `hisdb`.`seg_encounter_profile`( `encounter_nr` VARCHAR(20), `pid` VARCHAR(12), `civil_status` VARCHAR(35) ); 

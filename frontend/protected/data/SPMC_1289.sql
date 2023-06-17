@@ -1,0 +1,1 @@
+UPDATE `seg_rep_params` SET `choices` = '\'OBMAIN-OB MAIN\',\'OBPOC-OB POC\',\'RM-REGULAR MAIN\',\'RP-REGULAR POC\',\'POS-POS\', \'WB-WELL BABY\'' WHERE `param_id` = 'billing_categories';

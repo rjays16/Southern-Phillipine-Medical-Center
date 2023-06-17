@@ -1,0 +1,1 @@
+ALTER TABLE `hisdb`.`care_encounter` ADD COLUMN `DEPOvaccine_history` ENUM('yes','no','na') NULL AFTER `drinker_history`;

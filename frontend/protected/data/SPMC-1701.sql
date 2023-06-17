@@ -1,0 +1,1 @@
+INSERT INTO `hisdb4dev`.`seg_blood_dept` (`id`, `name`, `long_name`) VALUES ('ONCO', 'ONCO', 'ONCO');

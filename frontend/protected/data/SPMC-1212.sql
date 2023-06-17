@@ -1,0 +1,3 @@
+insert into `hisdb`.`seg_rep_template_params` (`report_id`, `param_id`) values ('opd_icd10_statistics', 'type_nr');
+insert into `hisdb`.`seg_rep_templates_dept` (`id`, `report_id`, `dept_nr`, `template_name`) values (NULL, 'opd_icd10_statistics', '182', 'OPD_ICD10_Statistics');
+UPDATE `hisdb`.`seg_rep_templates_registry` SET `rep_script` = 'OPD_ICD10_Statistics' , `with_template` = '1' , `template_name` = 'OPD_ICD10_Statistics' WHERE `report_id` = 'opd_icd10_statistics'; 
