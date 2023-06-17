@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="chart-cbg-reading" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0d99c406-cc9c-4257-a209-c6b33f8b1e4a">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="min_normal" class="java.lang.Float" isForPrompting="false">
+		<defaultValueExpression><![CDATA[70]]></defaultValueExpression>
+	</parameter>
+	<parameter name="max_normal" class="java.lang.Float" isForPrompting="false">
+		<defaultValueExpression><![CDATA[100]]></defaultValueExpression>
+	</parameter>
+	<parameter name="rprt_title" class="java.lang.String"/>
+	<parameter name="rprt_pid" class="java.lang.String"/>
+	<parameter name="rprt_encounterNo" class="java.lang.String"/>
+	<parameter name="rprt_encounterType" class="java.lang.String"/>
+	<parameter name="rprt_patientName" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="post_dt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="reading_level" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="60" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="752" height="20" uuid="26a943d5-ba9e-406b-8d0e-4008534d9a8f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rprt_title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="20" width="150" height="20" uuid="59433dbe-5512-4467-932d-978cbfb98c4f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{rprt_pid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="40" width="420" height="20" uuid="e0bd9f78-4b9c-4a09-b03d-773dd4af8790"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{rprt_patientName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="570" y="20" width="182" height="20" uuid="b9136376-d4ef-45b3-be58-44fef4442d2c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{rprt_encounterType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="20" width="140" height="20" uuid="393a2b3b-cbc2-4e66-8f63-fbf6ae90b4c9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{rprt_encounterNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="20" uuid="fae5827e-684f-4446-8ad3-e69a50e9ab35"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Patient No. (HRN):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="100" height="20" uuid="e7b2cfa7-d495-48e6-a00e-93a8a129d6e6"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Patient Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="20" width="80" height="20" uuid="670ada9f-8cfc-406c-85a3-3ed0710ebec3"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Encounter No.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="20" width="80" height="20" uuid="1b14f623-6055-4a46-8a61-0fe2a55fbbfb"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Encounter Type:]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="570" y="40" width="182" height="20" uuid="fcfc6b15-a96c-423d-9183-0e012bf8cfe7"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="520" y="40" width="50" height="20" uuid="4cf037ef-4ebc-43a5-9e84-2bf3d7e041ba"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Run Date:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<summary>
+		<band height="248">
+			<lineChart>
+				<chart evaluationTime="Report" customizerClass="com.jasper.customized.BetterChartLabels">
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="752" height="247" isPrintWhenDetailOverflows="true" uuid="4e9b086f-f542-4427-b739-4a9dbe378468">
+						<property name="MaximumCategoryLabelWidthRatio" value="1.5"/>
+						<property name="MaximumCategoryLabelLines" value="2"/>
+					</reportElement>
+					<chartTitle/>
+					<chartSubtitle>
+						<font fontName="SansSerif"/>
+					</chartSubtitle>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["GLUCOSE LEVEL READINGS"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{post_dt}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{reading_level}]]></valueExpression>
+						<labelExpression><![CDATA["Glucose Level Readings"]]></labelExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["NORMAL MAX CBG LEVEL"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{post_dt}]]></categoryExpression>
+						<valueExpression><![CDATA[$P{max_normal}]]></valueExpression>
+						<labelExpression><![CDATA["Glucose Level Readings"]]></labelExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["NORMAL MIN CBG LEVEL"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{post_dt}]]></categoryExpression>
+						<valueExpression><![CDATA[$P{min_normal}]]></valueExpression>
+						<labelExpression><![CDATA["Glucose Level Readings"]]></labelExpression>
+					</categorySeries>
+				</categoryDataset>
+				<linePlot>
+					<plot labelRotation="90.0"/>
+					<categoryAxisFormat labelRotation="90.0">
+						<axisFormat verticalTickLabels="true">
+							<labelFont>
+								<font size="9"/>
+							</labelFont>
+							<tickLabelFont>
+								<font size="9"/>
+							</tickLabelFont>
+						</axisFormat>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</linePlot>
+			</lineChart>
+		</band>
+	</summary>
+</jasperReport>

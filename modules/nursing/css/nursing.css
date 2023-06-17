@@ -1,0 +1,112 @@
+/*ADDED BY PETER ANTHONY DUOT
+  MARCH 30, 2017
+*/
+
+.printRoundsClass, .cbgClass
+{
+	font-weight: bold;
+	cursor: pointer;
+	display: inline-block;
+	width: 200px;
+	height: 20px;
+	border: 1px solid black;
+	text-align: center;
+	padding-top: 5px;
+	position: relative;
+	bottom: 2px;
+	color: black;
+}
+
+.chooseTime
+{
+	background: white;
+	width: 220px;
+	height: 80px;
+	position: fixed;
+	left: 490px;
+	top: 187px;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 5px;
+	z-index: 31;
+}
+
+.rowShift
+{
+	margin-bottom: 10px;
+}
+
+.blackBackground
+{
+	position: fixed;
+	top: 170px;
+	left: 450;
+	width: 300px;
+	height: 120px;
+	background: #0153dc;
+	opacity: .6;
+	z-index: 30;
+}
+
+.shiftLabel
+{
+	color: black;
+	font-size: 1.5em;
+}
+
+.okShift
+{
+	height: 25px;
+	width: 75px;
+}
+
+.cancelShift
+{
+	height: 25px;	
+	width: 75px;
+}.panel {
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+.panel-body {
+  padding: 5px;
+}
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.panel-primary {
+  border-color: #337ab7;
+}
+.panel-info {
+  border-color: #bce8f1;
+}
+.panel-info > .panel-heading {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.panel-primary > .panel-heading {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.ui-timepicker-select {
+  width: 100px;
+}
+
+.ui-state-highlight{
+	border:1px solid #0791cf/*{borderColorDefault}*/ !important;
+	background:#0791cf/*{bgColorDefault}*/ url(images/ui-bg_glass_75_e6e6e6_1x400.png)/*{bgImgUrlDefault}*/ 50%/*{bgDefaultXPos}*/ 50%/*{bgDefaultYPos}*/ repeat-x/*{bgDefaultRepeat}*/!important;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+	border:1px solid #0791cf/*{borderColorActive}*/ !important;
+	background:#0791cf/*{bgColorActive}*/ url(images/ui-bg_glass_65_ffffff_1x400.png)/*{bgImgUrlActive}*/ 50%/*{bgActiveXPos}*/ 50%/*{bgActiveYPos}*/ repeat-x/*{bgActiveRepeat}*/!important; color: #ffffff;
+}

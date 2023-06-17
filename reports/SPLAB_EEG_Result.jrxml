@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SPLAB_EEG_Result" language="groovy" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0263162364614138"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="age" class="java.lang.String"/>
+	<parameter name="sex" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="clinical" class="java.lang.String"/>
+	<parameter name="physician" class="java.lang.String"/>
+	<parameter name="HRN" class="java.lang.String"/>
+	<parameter name="medication" class="java.lang.String"/>
+	<parameter name="summary" class="java.lang.String"/>
+	<parameter name="interpret" class="java.lang.String"/>
+	<parameter name="eeg_in_charge" class="java.lang.String"/>
+	<parameter name="consult_doc" class="java.lang.String"/>
+	<parameter name="address" class="java.lang.String"/>
+	<parameter name="parameter1" class="java.lang.String"/>
+	<parameter name="signatureUrl" class="java.lang.String"/>
+	<field name="doh" class="java.lang.String"/>
+	<field name="spmc" class="java.lang.String"/>
+	<pageHeader>
+		<band height="253" splitType="Stretch">
+			<rectangle>
+				<reportElement x="7" y="152" width="558" height="91"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="30" width="572" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Republic of the Philippines]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="45" width="572" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Department of Health]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="572" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[Center for Health Development Davao Region]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="75" width="572" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SOUTHERN PHILIPPINES MEDICAL CENTER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="90" width="572" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[J.P. Laurel Avenue, Davao City]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="123" width="572" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Electroencephalography Result Form]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="159" width="58" height="15"/>
+				<box leftPadding="6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="66" y="159" width="177" height="15"/>
+				<box leftPadding="3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="243" y="174" width="30" height="15"/>
+				<box leftPadding="6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Age:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="273" y="174" width="77" height="15"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{age}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="353" y="174" width="30" height="15"/>
+				<box leftPadding="6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Sex:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="383" y="174" width="24" height="15"/>
+				<box leftPadding="3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{sex}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="243" y="194" width="94" height="15"/>
+				<box leftPadding="6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Requesting MD:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="345" y="194" width="219" height="15"/>
+				<box leftPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{physician}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="8" y="204" width="72" height="15"/>
+				<box leftPadding="6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Clinical Data:]]></text>
+			</staticText>
+			<image>
+				<reportElement x="56" y="36" width="70" height="70"/>
+				<imageExpression class="java.lang.String"><![CDATA[$F{doh}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="443" y="29" width="75" height="75"/>
+				<imageExpression class="java.lang.String"><![CDATA[$F{spmc}]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="80" y="204" width="163" height="15"/>
+				<box leftPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{clinical}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="8" y="220" width="72" height="15"/>
+				<box leftPadding="6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Medications:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="80" y="220" width="163" height="15"/>
+				<box leftPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{medication}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="243" y="209" width="95" height="15"/>
+				<box leftPadding="6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date Performed:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="243" y="159" width="40" height="15"/>
+				<box leftPadding="6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="false"/>
+				</textElement>
+				<text><![CDATA[HRN:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="283" y="159" width="100" height="15"/>
+				<box leftPadding="3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{HRN}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="345" y="209" width="219" height="15"/>
+				<box leftPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="8" y="175" width="58" height="15"/>
+				<box leftPadding="6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Address:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="66" y="174" width="177" height="30"/>
+				<box leftPadding="3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{address}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="16">
+			<staticText>
+				<reportElement x="8" y="-4" width="145" height="15"/>
+				<box leftPadding="6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Technical Summary]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="101">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="8" y="-4" width="556" height="104" isPrintWhenDetailOverflows="true"/>
+				<box topPadding="6" leftPadding="20" bottomPadding="6" rightPadding="20"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="DejaVu Sans" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{summary}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="115">
+			<staticText>
+				<reportElement positionType="Float" x="7" y="3" width="145" height="15"/>
+				<box leftPadding="6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Interpretation]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="7" y="18" width="557" height="95" isPrintWhenDetailOverflows="true"/>
+				<box topPadding="6" leftPadding="20" bottomPadding="6" rightPadding="20"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="DejaVu Sans" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{interpret}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="165">
+			<textField isBlankWhenNull="true">
+				<reportElement x="285" y="48" width="260" height="20"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{consult_doc}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="141" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[SPMC-F-SLS-06]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="137" y="141" width="148" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[Effectivity: October 1, 2013]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="337" y="141" width="52" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[Rev: 0]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="446" y="141" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="526" y="141" width="40" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="285" y="68" width="260" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Electroencephalographer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="110" width="207" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EEG Unit In-Charge]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="20" y="90" width="207" height="20"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{eeg_in_charge}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

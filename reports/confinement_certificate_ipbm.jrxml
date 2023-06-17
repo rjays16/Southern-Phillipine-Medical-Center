@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="medical_abstact" language="groovy" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isSummaryWithPageHeaderAndFooter="true" isFloatColumnFooter="true" uuid="85693536-39f1-4115-a47b-8050db0e7eef">
+	<property name="ireport.zoom" value="1.4615378250000728"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="hrn" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="homis_id" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="encounter_nr" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="date" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="patient_name" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="age" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="gender" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="address" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="admission_date" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="requestor" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="relation" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="purpose" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="attending_physician" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="position" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="medico_y" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="medico_n" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="r_spmc" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="r_ipbm" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="medico_details" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="civil_status" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="diagnosis" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="purpose_text" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="encoded_by" class="java.lang.String"/>
+	<parameter name="address_short" class="java.lang.String"/>
+	<pageHeader>
+		<band height="213">
+			<staticText>
+				<reportElement x="9" y="90" width="258" height="20" uuid="685c214b-a71f-4c7c-b5d9-c23a316dade9"/>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[HRN:___________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="110" width="258" height="20" uuid="ebda0764-eabd-4d33-bcfd-a56ef0e04a9c"/>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Homis ID:________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="82" width="113" height="20" uuid="903757b8-9de9-404e-83ad-176ccb0230fb"/>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[[   ] Medico Legal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="82" width="145" height="20" uuid="a2342fc4-42ef-4be4-95e6-83216d4e49ab"/>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[[   ] Non Medico Legal]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="53" y="89" width="100" height="20" uuid="4829770a-31ff-4f32-8e42-047951eaf984"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hrn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="79" y="110" width="100" height="20" uuid="7aa5ec0d-3200-43c2-969e-7f805c16d10e"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{homis_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="292" y="83" width="37" height="20" uuid="23e9ba95-059d-4eb5-8cfa-ae0c6f9f18f9"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{medico_y}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="424" y="83" width="37" height="20" uuid="5ff7d2c5-f932-4c5d-9ca5-974a36565567"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{medico_n}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="200" y="60" width="372" height="15" uuid="7be322bf-8528-4fb8-bc03-c54225a3005f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[(SPMC-IPBM)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="45" width="372" height="15" uuid="fe5c7fbb-1845-4cdb-8991-18966067cb01"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Institute of Psychiatry and Behavioral Medicine]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="30" width="372" height="15" uuid="02980242-80ce-4577-b23e-f7bf9838764d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isItalic="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[SOUTHERN PHILIPPINES MEDICAL CENTER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="15" width="372" height="15" uuid="2b92433e-b496-410c-ac9a-2d17e2607afd"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Department of Health]]></text>
+			</staticText>
+			<image isLazy="true">
+				<reportElement x="7" y="0" width="86" height="76" uuid="ed58ee64-8d43-47a7-be06-311429bafabc"/>
+				<imageExpression><![CDATA[$P{r_spmc}]]></imageExpression>
+			</image>
+			<image isLazy="true">
+				<reportElement x="93" y="0" width="86" height="76" uuid="1631881b-d11b-4524-a72e-75d29c8fd1a0"/>
+				<imageExpression><![CDATA[$P{r_ipbm}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="9" y="131" width="258" height="20" uuid="3598c080-071f-4720-8091-2d72a7e7225b"/>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Case No.:_______________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="150" width="258" height="20" uuid="55ce098d-cdbc-4a2a-972f-7562fe4614dd"/>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Date:___________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="176" width="570" height="32" uuid="e79c35d6-ba6e-4251-a7d3-f228c6fc1c9f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="23" isBold="false" isItalic="true" isUnderline="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[CERTIFICATE OF CONFINEMENT]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="79" y="131" width="118" height="20" uuid="b3e0ee09-18e9-4960-8eb0-ece370ae064a"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encounter_nr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="53" y="150" width="100" height="20" uuid="a4f38784-8abd-4117-b3de-cd3ee582ed31"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="200" y="0" width="372" height="15" uuid="abdeb7c3-7b92-49d5-b9b2-52b9eccb4cb7"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Republic of the Philippines]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="157" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="7" width="450" height="20" uuid="8dc296ff-8701-45a0-8d1c-ccf9a3f1b9ff"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[TO WHOM IT MAY CONCERN:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="35" width="546" height="20" uuid="0c53f295-2247-41ec-af37-0d0d6a550936"/>
+				<textElement markup="none">
+					<font fontName="SansSerif" size="10" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[THIS is to certify that patient ________________________________________________.,________ of age,___________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="80" width="569" height="20" uuid="895cc551-4d8a-4b1d-b9b1-fdab074de13e"/>
+				<textElement markup="none">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[was ADMITTED in this institution on / from_____________________________ with the following finding/diagnosis.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="104" width="72" height="20" uuid="0f764cd0-7aea-44a7-b897-bc8d8c7cbe4c"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[DIAGNOSIS :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="155" y="35" width="267" height="15" uuid="c93e0892-8816-4efe-afd0-0e4ebdccdeaf"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="DejaVu Sans" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{patient_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="35" width="46" height="15" uuid="9d53ac4e-ec99-491d-b5cc-c16af673edd5"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="505" y="35" width="60" height="15" uuid="1d632d85-ea78-4d05-ae96-dd5523641f3c"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="DejaVu Sans" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="194" y="78" width="161" height="16" uuid="6602624c-248d-4ffa-8b49-9c040ee029ab"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{admission_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="5" y="58" width="76" height="15" uuid="16bb2ee8-cef5-4588-81e5-8d1925b23f39"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{civil_status}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" mode="Opaque" x="73" y="104" width="497" height="53" isPrintWhenDetailOverflows="true" uuid="24eb2c10-dec8-4c75-8bb5-9673d31717cb"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{diagnosis}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="58" width="567" height="20" uuid="67d7336d-6bf6-4199-b78e-01c44e6ba0c7"/>
+				<textElement markup="none">
+					<font fontName="SansSerif" size="10" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[,______________ and a resident of _________________________________________________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="167" y="52" width="402" height="20" uuid="96b49243-faaa-4aee-b2d9-b26a7e22e313"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{address}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="167" y="51" width="402" height="20" uuid="5febd4af-398c-4912-a820-d800500ae1b7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{address_short}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="56" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="Float" x="56" y="3" width="516" height="25" uuid="843d104b-dd18-4a4a-91f6-59396e230256"/>
+				<textElement markup="html">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[This certification is issued upon the request of _____________________________, the ______________, for]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="438" y="19" width="94" height="15" uuid="c29714a7-ad13-4a16-9084-f5cd539282b9"/>
+				<textElement textAlignment="Center" markup="html">
+					<font size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[(relation to patient)]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="260" y="3" width="162" height="15" uuid="513cee3a-dd08-4136-9611-152719749d60"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+					<font fontName="DejaVu Sans" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{requestor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="444" y="3" width="76" height="16" uuid="1364bf94-02f9-45a2-a156-b09fa2d10f4b"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+					<font fontName="DejaVu Sans" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{relation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="5" y="34" width="400" height="15" uuid="d13bfaac-bf44-48bc-9b2a-c9e80607d0da"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+					<font fontName="DejaVu Sans" size="10" isBold="false" isUnderline="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{purpose}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="260" y="19" width="162" height="20" uuid="f7d41a82-5bf1-417f-85ee-0897459d2afc"/>
+				<textElement textAlignment="Center" markup="html">
+					<font size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[(name of requestor)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="7" y="34" width="565" height="20" uuid="3cff79bb-a4dc-4c12-b372-20e415cdc179"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[$P{purpose_text}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="80" splitType="Prevent">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="0" y="0" width="366" height="80" uuid="b20fccde-c1ed-4601-92d9-4a7316fb2e29"/>
+				<box topPadding="0" bottomPadding="50"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="none">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{medico_details}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="408" y="14" width="140" height="26" uuid="5eb4df14-1809-47cb-af7c-88909895061c"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[_________________________]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="408" y="26" width="140" height="20" uuid="44270560-8814-4e2d-bf6e-494ac340ac6f"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="DejaVu Sans" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{attending_physician}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="408" y="42" width="140" height="20" uuid="f7b4d515-8510-40ba-b56b-73c7b513117c"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{position}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="116" splitType="Prevent">
+			<staticText>
+				<reportElement x="431" y="64" width="139" height="17" uuid="7b254887-e25b-4fe7-9391-421de5b72595"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[__________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="137" y="72" width="293" height="20" uuid="378f76a9-b525-4a6f-b1e2-d850d9829048"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Tel. Nos. 2263540-42/2271531;FAX(082) 2263540]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="136" y="51" width="294" height="20" uuid="0e63c27a-4a0c-4472-b9bb-b5e9cad34ccf"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[J.P Laurel Ave.,Bajada. Davao City]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="64" width="144" height="17" uuid="e465b14b-5b84-4f4b-b70d-339356ba3eb3"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[_______________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="2" y="95" width="146" height="18" uuid="e3508e43-272b-47a8-8f75-52dc21ab6d36"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="none">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[SPMC-F-HIMD-PSY-14]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="171" y="95" width="228" height="18" uuid="02f8cb3b-d165-4933-9d50-964fe16195db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Effectivity Date : 01 May 2015]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="405" y="95" width="70" height="18" uuid="621d2bdd-7b1d-4ff4-b4be-742a6a94a117"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Rev: 0]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="9" y="4" width="114" height="47" uuid="b411fd95-1326-48d3-8692-66234a3f02dd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Not valid without SPMC Seal]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="453" y="95" width="80" height="18" uuid="3cfc4c5f-90ab-4091-a0c0-ae61f9521dc8"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="532" y="95" width="40" height="18" uuid="5506204e-5d45-4823-a989-b43fb042f29a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="2" y="79" width="70" height="18" uuid="107390c0-b5a2-429b-8f28-2d32a1e2fe3b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="9" isItalic="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Encoded by:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="62" y="79" width="105" height="18" uuid="201e2d95-6a9e-441c-abc3-039a79267618"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encoded_by}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

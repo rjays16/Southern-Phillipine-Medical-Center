@@ -1,0 +1,2907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BB_Compatibility_Report" language="groovy" pageWidth="612" pageHeight="1008" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="10" bottomMargin="10" uuid="5f6da657-4531-4da3-9975-27e456291fff">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="3930"/>
+	<parameter name="from_date" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="header" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="hospital_name" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="department" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="to_date" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="hosp_country" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="hosp_agency" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="hosp_name" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="hosp_addr1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="image_01" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="image_02" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="prep_1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="prep_2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="not_1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="not_2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="compa_header" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="patient" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="hrn" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="physician" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="source" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="diagnosis" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="date_birth" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="age" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="gender" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ward" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="component" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="blood" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="qtys" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="units" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="volume" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="type_request" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="recieved" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="rtime" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="rmeridian" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="started" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="stime" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="smeridian" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="done" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="dtime" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="dmeridian" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="compa" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="notcompa" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="re_typ" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="serial" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="personnel" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="hosp_header" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="footer" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="color_code" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="effectivity" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="rev" class="java.lang.Integer" isForPrompting="false"/>
+	<parameter name="patient_blood_type" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="donor_blood_type" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="result_compatibility" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="date_encoded" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="date_crossmatched" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="date_done" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="date_generated" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="lab_no" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="expiry_date" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="lis_order_no" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="medtech" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="generic_footer" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="generic_effectivity" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="generic_rev" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="printbloodlabel" class="java.lang.String" isForPrompting="false"/>
+	<field name="patient_name" class="java.lang.String"/>
+	<field name="date_admission" class="java.lang.String"/>
+	<field name="date_death" class="java.lang.String"/>
+	<field name="ward" class="java.lang.String"/>
+	<field name="reason" class="java.lang.String"/>
+	<field name="noted_name" class="java.lang.String"/>
+	<field name="noted_pos" class="java.lang.String"/>
+	<field name="image_01" class="java.lang.String"/>
+	<field name="image_02" class="java.lang.String"/>
+	<field name="nob" class="java.lang.String"/>
+	<field name="dob" class="java.lang.String"/>
+	<field name="mn" class="java.lang.String"/>
+	<field name="fn" class="java.lang.String"/>
+	<field name="image_03" class="java.lang.String"/>
+	<field name="image_04" class="java.lang.String"/>
+	<field name="image_05" class="java.lang.String"/>
+	<title>
+		<band height="945" splitType="Stretch">
+			<rectangle>
+				<reportElement x="309" y="457" width="263" height="20" uuid="4688ec18-bb3f-4e41-83b6-2dbc065cceee"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="443" y="457" width="129" height="20" uuid="1c6169e1-f709-471d-a6ba-7d96c66736b5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="303" y="607" width="269" height="20" uuid="34f8510b-bd44-41e9-9648-124b388b4d0b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="460" y="607" width="112" height="20" uuid="bf98599b-ea84-4cc1-886a-ae9649592521"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="466" y="438" width="106" height="15" uuid="b1bcaf78-8c5b-4a85-8ff5-96073d363a04"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="568" width="123" height="30" uuid="7d690bbc-785d-472e-91ac-f4687617895f"/>
+			</rectangle>
+			<image>
+				<reportElement x="5" y="333" width="172" height="37" uuid="d468b3a7-d3df-4582-b016-2928a1ab206b"/>
+				<imageExpression><![CDATA[$F{image_03}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="303" y="548" width="269" height="20" uuid="5a53a606-02ca-43fc-bd49-324f4ae0da11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="139" width="572" height="85" uuid="a157df15-fa45-4bb9-a916-1e32e8862282"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="3" y="144" width="54" height="13" uuid="746ff07d-e336-4521-82be-d51546e9187f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Patient:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="146" width="54" height="13" uuid="66e6ec03-689f-4bdc-ae4a-bd6420a70c7c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[HRN:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="158" width="53" height="13" uuid="36ecef33-7737-42e1-8687-2fc8b1106cd8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Physician:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="186" width="52" height="13" uuid="543e0acb-fe7d-497c-ac9e-d6ec9fca2adb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Diagnosis:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="319" width="37" height="13" uuid="4b707502-cb75-48b3-b999-2ae014e83efd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Source:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="172" width="30" height="13" uuid="71b31d3e-0e9a-4bd3-b6b8-1bfaefeaf134"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Ward:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="158" width="60" height="13" uuid="dbeb1713-8f59-475c-b543-c0b798fd950a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Age/Gender:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="319" width="60" height="13" uuid="2daea306-5d4a-4658-879b-8f9cfff0af98"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Component:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="144" width="63" height="13" uuid="4e547d97-e734-4989-ad6a-b7fe22e10cfe"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Date of Birth:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="409" y="172" width="87" height="13" uuid="8b8c7141-8f56-4416-a2d4-6cd105f59b2d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Type of Request:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="409" y="158" width="49" height="13" uuid="efd5a1e5-07d3-435f-93b2-6b83b54a196f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[# of Units:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="319" width="47" height="13" uuid="dcd14d25-036f-420e-aafb-789b42153ed6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Serial No.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="461" y="319" width="58" height="13" uuid="cffc2fcc-5275-48ca-8590-a85b88f088c2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Expiry Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="321" y="363" width="219" height="13" uuid="f1f6c812-c071-4ac1-b23d-1a38fd0f12a0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Medical Technologist]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="363" width="160" height="13" uuid="66f9b6f5-e259-4a6e-a097-54743006f69d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Anatomic & Clinical Pathologist]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="350" width="222" height="13" uuid="9d43c634-2990-4539-b6fc-cd2578a4a0b4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MARLON M. MARAMION., MD, FPSP,APCP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="371" width="572" height="14" uuid="6f6610c9-6135-4d45-8f7d-320096cd308a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="381" width="572" height="13" uuid="18fbf587-a891-4428-8867-28afb441f0de"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BLOOD TRANSFUSION RECORD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="392" width="227" height="13" uuid="a855b7d5-0f3f-4843-87b4-77f08e04c377"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[[ ] Consent for Transfusion Secured & Signed]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="286" y="392" width="259" height="13" uuid="43ac9295-dfce-4bd3-af82-b33a168e8cff"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Transfusion Ordered by:________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="543" y="396" width="22" height="13" uuid="1081a8f8-79f1-410a-b1b4-c08f47811230"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[,MD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="404" width="572" height="13" uuid="de81880c-5a75-4d39-92cf-f697592a140f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Blood Withdrawn from Blood Bank: (For Blood Bank Use )]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="379" y="417" width="193" height="20" uuid="f2d8f9fd-3dbd-488e-9ca1-0123b567a9aa"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="169" y="417" width="210" height="20" uuid="7fd10b72-4055-46a4-b00f-61061ec1a107"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="417" width="169" height="20" uuid="d4989e62-d586-4962-8ba1-804132554335"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="379" y="437" width="193" height="20" uuid="cd3d9b64-17eb-4b3e-9878-6be8b68a2c40"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="169" y="437" width="210" height="20" uuid="f711b9f5-a22c-4f16-85ea-16811595160c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="437" width="169" height="20" uuid="9b53802c-0a0f-41ea-8dba-fefd45f96271"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="1" y="419" width="161" height="15" uuid="487607ad-cc49-460b-80f9-d8948a881397"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Blood Unit Issued :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="440" width="161" height="15" uuid="27c0f626-f283-4c63-ac70-ff07e3cc9e46"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Blood Unit Issued & Checked by:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="420" width="177" height="15" uuid="5c413507-c0d4-4a8e-8a62-8ee0b1be622e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="439" width="80" height="15" uuid="ab8b82fe-efcd-43dd-97f0-5526f5b6d2aa"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="420" width="192" height="15" uuid="a44bdb74-ca8a-4f00-9199-863c864bde6a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Time:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="295" y="439" width="80" height="15" uuid="d3ea487a-7faa-462c-a18b-1504eac748a2"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[,RMT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="440" width="100" height="15" uuid="5df0bcc4-1095-4f0a-86aa-3eecd9f36996"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[2. Verified by:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="440" width="80" height="15" uuid="9e85fada-49eb-43ba-b703-0960848dbb01"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[,RMT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="481" width="572" height="13" uuid="bdd788c9-dcdf-4a20-ae81-c12a4564e3af"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[THIS PORTION TO BE ACCOMPLISHED BY THE STAFF ADMINISTERING THE BLOOD UNIT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="494" width="572" height="13" uuid="c1ed735c-4a84-4f55-bded-8fe5a5273bf5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Patient armband, blood bag, compatibility label and information on this slip corresponds?]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="303" y="508" width="269" height="20" uuid="002149a8-8e5d-4df0-ad7b-48b01dc879d7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="508" width="123" height="20" uuid="aee38a9a-2c34-43a9-aea4-eab78f0d5c7a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="123" y="508" width="180" height="20" uuid="1f078568-700d-40ac-a1c7-01a7c10b0007"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="528" width="123" height="20" uuid="412142b7-3173-43cc-a92c-5ac7e890bd83"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="303" y="528" width="157" height="20" uuid="8afd6e39-9c08-4eb7-8cb5-8973e306a6ce"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="123" y="528" width="180" height="20" uuid="e57462d9-47d8-4337-aa37-370c6d598e87"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="548" width="123" height="20" uuid="14a77f64-8cf7-4b64-94ab-3888d6bf0d93"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="123" y="548" width="180" height="20" uuid="0b59402d-e28f-4706-abb5-000bc6802990"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="303" y="568" width="269" height="20" uuid="b2ff7ac2-3583-4b8e-946e-11ea5e621386"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="123" y="568" width="180" height="30" uuid="1c503221-d87f-4a3e-9d0e-e64dbb549465"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="597" width="123" height="30" uuid="44555f28-51ff-4367-b750-ad04ef66691f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="123" y="597" width="180" height="30" uuid="290b10a4-c67d-4fe9-8005-fce618b8ff09"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="460" y="528" width="112" height="20" uuid="5e5e252d-bdfa-4067-bffc-8a52d062e2ff"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="2" y="510" width="122" height="15" uuid="56c490de-562a-488a-8faa-7071ed286725"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Patients Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="530" width="122" height="15" uuid="208860d7-bd05-439b-82a9-49fbfbb5f779"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Blood Unit Number:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="550" width="122" height="15" uuid="c188957d-adbd-4a11-9bf2-4412e711e356"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Checked by:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="575" width="122" height="15" uuid="9e5c6fe1-aa42-4010-b17f-70049547ebf8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Blood Unit Transfused by:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="125" y="551" width="80" height="15" uuid="ce853745-e58f-4d3e-97e6-28505d0cc1b0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="550" width="80" height="15" uuid="b4fc8db1-9777-4799-92fa-262fb2afb3b3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="304" y="530" width="122" height="15" uuid="98e13916-fd7c-456e-b727-3d5bb149d35a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Unit Bld. Group]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="462" y="530" width="77" height="15" uuid="e474d542-1fdf-445a-b43c-96fd9173e7da"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Expiry:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="509" width="122" height="15" uuid="63841bed-de15-446c-9bd2-edd1a6b8cf2e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Patients Bld. Group:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="631" width="572" height="13" uuid="54a9c451-29ec-408b-945a-baa3a211255e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VITAL SIGNS MONITORING]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="-1" y="645" width="143" height="32" uuid="1c1cae9e-2d28-4ebe-b53e-583cbcc707d8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="142" y="645" width="84" height="32" uuid="d86f1514-dd61-4d8d-9961-7e6707ecf7d3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="645" width="215" height="32" uuid="994c259c-4ca6-4bae-a3a7-d375112653e4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="441" y="645" width="43" height="32" uuid="d259f0d4-6f43-4632-a112-2d84ffe1d0ca"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="484" y="645" width="88" height="32" uuid="5a02e2c9-b911-4230-ab5c-63aff5b00d9d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="6" y="664" width="123" height="13" uuid="6f0253bd-c760-428b-a2b3-e22082bbd6c5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[VITAL SIGNS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="647" width="67" height="13" uuid="d4a03aed-5846-4a35-b105-1beeac93a039"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Prior to Blood]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="662" width="64" height="13" uuid="fbed1842-faaa-4b0d-a9a0-2b675e0c505d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Transfusion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="204" y="664" width="251" height="13" uuid="c0d1201e-79e0-426c-839d-985373297e3c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[During Blood Transfusion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="495" y="647" width="64" height="13" uuid="fe9d99fa-b9af-412e-9573-ce801252ef76"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[After]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="495" y="662" width="64" height="13" uuid="6b3a93d5-6038-4a12-8365-926720e9088f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Transfusion]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="-1" y="677" width="143" height="15" uuid="1f5f838e-cf8a-40f1-b62d-5401f20b9353"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="-1" y="692" width="143" height="15" uuid="a2c9e7c5-a700-4292-83cd-c055b8182645"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="-1" y="707" width="143" height="15" uuid="73c4318f-d3a2-411c-8c78-a464d2dd3cd9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="-1" y="722" width="143" height="15" uuid="61502db0-8251-4ddc-9278-87de67272320"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="-1" y="737" width="143" height="15" uuid="4a1486ab-2c7c-4abe-b373-27f681b19a95"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="677" width="43" height="15" uuid="a2652a87-1ab3-48d2-9253-e5f9a3a635bd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="312" y="677" width="43" height="15" uuid="b2c54747-5abc-4f9e-9afc-3f84071eae5e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="484" y="677" width="88" height="15" uuid="5b0e722c-e150-4bb8-ac77-86acc6ca5843"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="355" y="677" width="43" height="15" uuid="9606aa2c-7553-4500-b760-eea0667e3d2c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="398" y="677" width="43" height="15" uuid="d51b15b1-eb6e-4422-ab36-0b15541fb2d3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="441" y="677" width="43" height="15" uuid="f9bbabd6-115f-416a-9cb2-a66b12ffeaa2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="142" y="677" width="84" height="15" uuid="d5fa72b2-908d-423e-903b-896bf330ab9b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="484" y="692" width="88" height="15" uuid="70c095b5-676d-4ed4-a9d8-613625b0bd24"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="312" y="692" width="43" height="15" uuid="5b7b66a6-8eb5-4bb4-8b23-c9987fe63b04"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="142" y="692" width="84" height="15" uuid="1d13c3c0-ce69-4e5e-a7e6-17e0b51f6aad"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="269" y="692" width="43" height="15" uuid="be7e805b-2e1e-42aa-94bd-0816c60a2951"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="441" y="692" width="43" height="15" uuid="dd4a2bc5-3d26-440b-997f-4c30254aea1e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="355" y="692" width="43" height="15" uuid="2f84a453-5918-45ac-bd8a-8f1ac194d6aa"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="692" width="43" height="15" uuid="997f0ce3-a3dc-4fb7-b60c-12b6f65aa5d5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="484" y="707" width="88" height="15" uuid="7789ef4c-5cc4-4d93-8147-3e2994adfe0a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="312" y="707" width="43" height="15" uuid="86542e8e-da30-4fa7-aa20-1979c03b41b7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="142" y="707" width="84" height="15" uuid="8f85f9e0-f2a6-49b0-b29b-856c2833d073"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="269" y="707" width="43" height="15" uuid="6eeb9421-96c5-4509-9651-7c294147d489"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="441" y="707" width="43" height="15" uuid="b97cbc24-1c1f-4428-ae9b-d11a333c6271"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="355" y="707" width="43" height="15" uuid="b49d46a1-6152-4f64-92fb-acf84e5714e2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="707" width="43" height="15" uuid="7b4aa6f7-1a5d-4488-8408-006874fcc583"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="484" y="722" width="88" height="15" uuid="a87d281b-f80f-45bf-b972-600324823bff"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="312" y="722" width="43" height="15" uuid="e9a4f04d-6bd7-4a9c-88ce-1e4d06c6f997"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="142" y="722" width="84" height="15" uuid="f559c5c8-ed5b-4818-a0c8-663813945746"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="269" y="722" width="43" height="15" uuid="0b4ec366-ef6e-4dd0-a591-f4a3dd83c67e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="441" y="722" width="43" height="15" uuid="9f704d62-164a-41a4-8679-ea40d48d8603"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="355" y="722" width="43" height="15" uuid="41aa3c27-54cf-4212-a6c0-50078aa9c37e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="722" width="43" height="15" uuid="d9f8e429-d830-4646-a89c-8c3e5098aa8a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="484" y="737" width="88" height="15" uuid="9cb47119-faaa-4256-a9e5-b073dced1551"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="312" y="737" width="43" height="15" uuid="0543672d-bdcb-4f64-9867-6b3444b8e9c6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="142" y="737" width="84" height="15" uuid="f74bd49d-e897-4fba-a3cb-7ebfe2b39ced"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="269" y="737" width="43" height="15" uuid="383836c3-d306-40d3-9e11-674640513a25"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="441" y="737" width="43" height="15" uuid="2cedb794-e0c5-4e2d-ace6-54e8649f6a8f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="355" y="737" width="43" height="15" uuid="9be2f1f1-958a-4894-85cd-a845ca6337a2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="737" width="43" height="15" uuid="a761d03f-7c6f-4df5-93fb-b506610e7262"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="693" width="106" height="13" uuid="c2c3a501-48ec-420c-b6a4-011a25dc1aac"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Temperature]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="722" width="107" height="13" uuid="237d05bc-feb3-4156-bd93-a528de39d0b0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[RR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="708" width="106" height="13" uuid="a2bee342-1cb7-4c3f-98cb-53f339961743"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Blood Pressure]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="737" width="107" height="13" uuid="26297a08-b993-4112-b05f-f3321a88b582"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="441" y="678" width="43" height="15" uuid="1cdf829d-fafa-4a18-ab52-eaf1f00be270"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[4 Hrs]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="269" y="677" width="43" height="15" uuid="290b7105-d3e5-49f1-ad91-04e1572bac90"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="398" y="692" width="43" height="15" uuid="d0e2e082-da2b-429f-92a1-ab0c46dc6570"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="398" y="707" width="43" height="15" uuid="fccd2a95-b806-4073-a18d-a0b8ed67b71a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="398" y="722" width="43" height="15" uuid="a5aa9096-683f-45c0-a976-28d8054cf1d1"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="398" y="737" width="43" height="15" uuid="d626aa26-44aa-46e2-a19a-33370cbebc15"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="226" y="677" width="43" height="15" uuid="426c3711-f736-49f7-bf57-a66316c50126"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[15 mins]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="269" y="677" width="43" height="15" uuid="cfe50b1b-e4d8-4ce5-9ecb-809aabb1074c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[30 mins]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="313" y="677" width="43" height="15" uuid="aedf4081-355f-4a81-9958-bb7fb6e9ce7e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[1 Hr]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="678" width="43" height="15" uuid="f6a90d23-c00b-448d-8d6e-e1d966b789ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[2 Hrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="397" y="678" width="43" height="15" uuid="8448f695-7f38-485c-ad89-73e12781a1a6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[3 Hrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="753" width="227" height="13" uuid="a83c05c4-aa35-4470-9f68-46e719ebd79d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Transfusion Reaction Noted:    [   ] YES    [   ] NO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="753" width="227" height="13" uuid="dbcd418e-aaa5-49db-8f0c-c3cb2841137c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Signs and Symptoms: ___________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="769" width="174" height="13" uuid="b5b9e1f3-f3a0-4d35-9873-b4a348abb394"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[________________________________MD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="359" y="770" width="205" height="13" uuid="3cba8f3c-7882-43b3-bd8b-1c277c06dcb4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[_________________________________________RN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="782" width="136" height="13" uuid="32ac687d-c914-4608-af90-cbf295f8bce9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Signature of Physician]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="782" width="157" height="13" uuid="582956e4-6678-4970-abd2-d998d1dba8b2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Signature of Registered Nurse]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="799" width="136" height="13" uuid="0ae1d816-2de3-42ec-98b1-3fbaec5bded8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IMPORTANT:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="810" width="542" height="13" uuid="393ae9ce-bd72-419b-b1ae-2fd897586452"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[To be accomplished in DUPLICATE. Please attach the ORIGINAL copy in chart & return DUPLICATE COPY to Blood Bank]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="811" width="21" height="13" uuid="c9762459-0460-40f8-9fc8-b3ed57ff4de3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[*]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="836" width="551" height="13" uuid="c3fdb25c-85af-4e8b-9eec-512427f3ee48"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[IN CASE OF TRANSFUSION REACTION, INFORM BLOOD BANK &  ACCOMPLISH BLOOD TRANSFUSION REACTION REGISTRY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="837" width="21" height="13" uuid="effe264f-ec23-4cb0-bb75-2cb636ccda65"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[*]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="823" width="542" height="13" uuid="c1da66d5-2620-4a0a-a8d4-d38df498a2ad"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[as soon as transfusion is finished.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="845" width="538" height="13" uuid="a427251a-05bd-4573-8c79-653a3079348a"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="856" width="501" height="13" uuid="b8354063-9911-41c7-bfc4-a59f0383166d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TO BE ACCOMPLISHED BY THE BLOOD TRANSFUSION PERSONNEL ON RETURN OF CONSUMED UNIT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="870" width="96" height="13" uuid="f54b4612-3e08-43b7-a194-71722e46f725"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Consumed bag: [    ]    ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="882" width="265" height="13" uuid="c85a80a9-8f58-4d17-a626-b9999252f732"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Received by: ______________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="895" width="208" height="13" uuid="7617e94e-edff-472b-a687-07fbc0f32209"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Retention time: 5 yrs.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="319" y="871" width="252" height="13" uuid="33f1412b-51ea-4181-999e-e5afceed3f3a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Take note of amount of remaining blood:_________cc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="319" y="881" width="230" height="13" uuid="e2064c1d-890c-43d4-b9be-56a6f436650c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Date:____________________                Time:_________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="208" y="913" width="73" height="13" uuid="c43a2827-28d8-4591-a78c-bf8b01e366ce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Effectivity:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="387" y="913" width="35" height="13" uuid="f6e8d5c7-90dd-43b9-92a0-905e3118fe07"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Rev.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="472" y="913" width="100" height="13" uuid="a456a16d-9cbe-4833-bc0c-5af7879daec1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Page 1 of 1]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="404" y="319" width="53" height="13" uuid="44f1ec32-879e-4c1c-bd54-45b7a34e33b7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{source}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="33" y="172" width="361" height="13" uuid="b3682f60-dbe6-43e6-acfb-39f6ee689242"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ward}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="242" y="319" width="57" height="13" uuid="ac6089d8-169c-4ac3-9e0e-427a53f0ba79"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{component}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="457" y="158" width="14" height="13" uuid="73abe2aa-1fee-4cfa-8915-aa0d73ef5629"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{units}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="489" y="172" width="78" height="13" uuid="6b30c473-c745-4130-a656-17d3ec6d8ea1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{type_request}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="48" y="319" width="132" height="13" uuid="8e18febb-cc93-43ec-8f2c-5fbeba6e7a5d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{serial}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="476" y="158" width="12" height="13" uuid="b19aa911-000e-4979-8408-e84fe6b6bcc5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[of]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="50" y="144" width="147" height="13" uuid="795e7a21-c5ce-485a-b588-744e7429f2a4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{patient}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="464" y="144" width="98" height="14" uuid="eeb0141f-acc6-4d3b-91d4-84fd078201f5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hrn}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="265" y="158" width="127" height="13" uuid="31f550b4-dcd8-474d-a584-f39dc7f2e68f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{age}+" / "+$P{gender}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="490" y="158" width="50" height="13" uuid="29583570-69e0-48d9-bbc9-45071078a8fb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{qtys}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="50" y="158" width="143" height="13" uuid="3505df4e-6616-4006-991c-ace4706c7199"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{physician}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="57" y="186" width="337" height="34" uuid="ec9b37ad-df64-457e-b4f5-73c2c7f0dfa1"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{diagnosis}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="264" y="144" width="128" height="13" uuid="2b3c5739-7637-4269-85f7-51262572184a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_birth}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="39" width="571" height="13" uuid="99932ef1-b447-4141-b15f-6509cf72a700"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10"/>
+				</textElement>
+				<text><![CDATA[Center for Health Development]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1" y="96" width="572" height="13" uuid="df73cf7c-df25-4f36-86bb-aaf92da376cb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{compa_header}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="13" width="572" height="13" uuid="156f694e-f6a6-402b-bf19-801d6c468d58"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hosp_country}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="52" width="572" height="13" uuid="d5851927-a88d-40b3-837b-e1d0153ed294"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hosp_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="27" width="572" height="12" uuid="2b843d8f-2b75-434c-8a77-e4cb9a106391"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hosp_agency}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="441" y="-194" width="190" height="77" uuid="0833fe58-0d66-4943-9c98-6c8052d556ee"/>
+				<imageExpression><![CDATA[$F{image_01}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="71" y="-175" width="159" height="58" uuid="27940be9-6571-459d-869e-634d0a6a6cdd"/>
+				<imageExpression><![CDATA[$F{image_02}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="71" y="23" width="159" height="58" uuid="7709f904-227e-4565-91b1-e8d3684b7014"/>
+				<imageExpression><![CDATA[$F{image_02}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="441" y="10" width="190" height="77" uuid="2bf21777-4522-41a3-9105-dea1965c2eba"/>
+				<imageExpression><![CDATA[$F{image_01}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="66" width="571" height="13" uuid="154128b5-383b-41a1-a13a-7f9a525bd05b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10"/>
+				</textElement>
+				<text><![CDATA[J.P. Laurel Avenue Bajada, Davao City]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="125" width="105" height="13" uuid="26421b08-761b-4da4-8f45-759c3957067a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PATIENT'S DATA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="457" width="169" height="20" uuid="2b6afd66-ff8e-43e8-80fe-a3f530515a9a"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="1" y="460" width="161" height="15" uuid="1092b8ed-45ec-4274-ae0d-ae502fd4a820"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Blood Unit Received & Checked by:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="169" y="457" width="140" height="20" uuid="e7b4dd9e-19e3-406b-8a65-c6244377c96c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="170" y="460" width="80" height="15" uuid="c029c81f-fe31-48af-aca1-8a6bbb211c05"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="459" width="117" height="15" uuid="c6dc6ca0-eed0-4492-b84e-b3ecd0e52200"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ Signature:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="445" y="459" width="103" height="15" uuid="c044c654-afa0-4d33-9844-a9e8d7592d3c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date & Time:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="476" y="925" width="100" height="13" uuid="939246ef-b9ee-460b-9688-da822c282484"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[(Original)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="614" width="90" height="15" uuid="3aadbee7-1c93-4f01-979c-555ddb4c6cfe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Name & Signature]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="303" y="587" width="269" height="20" uuid="20ac17fc-057d-418c-a745-9fded9bf32be"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="304" y="570" width="122" height="15" uuid="4b83dd8e-0fac-4604-90a1-5c9170a95d77"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date & Time Started:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="304" y="589" width="122" height="15" uuid="6824fb5b-d528-40c5-8ea1-b4eac94cf2c9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date & Time Terminated:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="304" y="609" width="122" height="15" uuid="be11730c-cef0-4ffb-afff-6b7b2bbe18b6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[No. of Hours Consumed:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="409" y="188" width="161" height="13" uuid="fc18f797-28ab-4f0b-a6ad-6a1095995553"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Indication: _______________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="604" width="126" height="15" uuid="9b938854-72fc-41de-b5c5-985a7c26fa5e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Transfusion Terminated by:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="301" y="319" width="64" height="13" uuid="46b6f8a1-02c4-4ff3-8f40-c203f6b0085a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Volume:_____]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="461" y="609" width="69" height="15" uuid="1882caab-3fec-42cb-9b33-7cd358d149d3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Amount Given:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="584" width="90" height="15" uuid="486637bf-28a7-42ba-b8fa-f7623910b38a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Name & Signature]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Transparent" x="321" y="350" width="219" height="13" forecolor="#000000" backcolor="#FFFFFF" uuid="b3092744-a6be-42de-84b4-928d344aa581"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="DejaVu Sans" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{medtech}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="912" width="208" height="20" uuid="048023f2-bb8a-4ef8-80d2-cfe4733d044b"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{footer}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="5" y="110" width="560" height="15" uuid="29202931-bfc5-4e7e-97b3-66fc56b16c13"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{color_code}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="271" y="913" width="96" height="13" uuid="ae68a00e-9035-42c1-b690-74eecd151c0b"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{effectivity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="416" y="913" width="44" height="12" uuid="51c3fa54-5353-4c54-885f-ef3d656b1e14"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rev}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="95" y="234" width="60" height="25" uuid="a892049e-3758-48e1-8ff6-e2a7ac6cd26f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_encoded}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="0" y="259" width="71" height="15" uuid="beca6837-a5bd-4335-b74f-4e3b01c4f182"/>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="274" width="279" height="31" uuid="0df4e726-979f-4861-959b-a0c072be3c49"/>
+				<box leftPadding="5" rightPadding="10">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result_compatibility}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="488" y="234" width="60" height="25" uuid="34e8364d-cc16-4967-a00c-71adaa1f2dda"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_done}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="234" width="97" height="13" uuid="0f3cef06-3ab7-44f8-be1f-0b734801c29c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date Time Encoded :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="71" y="259" width="222" height="15" uuid="b46539c0-4ceb-4bdf-81d6-e4a2c4c0cdc9"/>
+				<box leftPadding="5" rightPadding="10">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Blood Type]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="71" y="274" width="222" height="15" uuid="a4575e33-df14-4736-a5f2-96eb95bb4179"/>
+				<box leftPadding="5" rightPadding="10">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{patient_blood_type}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="191" y="234" width="121" height="13" uuid="1174f81f-90d6-4a5f-b200-65d6c17809b5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date Time Crossmatched :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="259" width="279" height="15" uuid="be5d362d-c872-4b07-9f64-509ebf0fe103"/>
+				<box leftPadding="5" rightPadding="10">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Result of Compatibility]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="409" y="234" width="80" height="13" uuid="5276bd95-6abb-4eaf-93f1-9ff46a908511"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Date Time Done :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="71" y="290" width="222" height="15" uuid="127341cd-0a70-44f0-a19b-0f94ce121f72"/>
+				<box leftPadding="5" rightPadding="10">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{donor_blood_type}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="290" width="71" height="15" uuid="f9422fc3-9325-43d0-8d46-974885cc9152"/>
+				<box leftPadding="5" rightPadding="10">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[DONOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="274" width="71" height="15" uuid="87fa6454-0ea8-41bf-8a72-2a105bf9187b"/>
+				<box leftPadding="5" rightPadding="10">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[PATIENT]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="312" y="234" width="60" height="25" uuid="2d55446a-13c1-4423-8cc8-5dd679945da1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_crossmatched}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="33" y="89" width="147" height="13" uuid="b759fdff-fbe6-4050-ba0a-7a67d4ccb85f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_generated}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="89" width="33" height="13" uuid="c7b08ff2-5b25-464e-ac4b-b820820c1fe7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Date: ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="428" y="103" width="145" height="13" uuid="20657390-d56a-4869-b4dc-523a273472e9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lis_order_no}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="428" y="89" width="45" height="13" uuid="3aed0394-829d-44af-a5ee-699c49407448"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Lab. No.: ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="519" y="319" width="60" height="25" uuid="be1f99d7-ff4c-4a32-a028-fb24c4abe12d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{expiry_date}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="473" y="89" width="99" height="13" uuid="221dc4c9-0137-4b27-8951-551fd6b2147c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lab_no}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="945">
+			<rectangle>
+				<reportElement x="379" y="437" width="193" height="20" uuid="33d3f83c-08a3-4233-9a12-ea508edb754b"/>
+			</rectangle>
+			<image>
+				<reportElement x="6" y="331" width="172" height="37" uuid="a21623b9-8ece-4a37-8db7-51aa8c0ee0a7"/>
+				<imageExpression><![CDATA[$F{image_03}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="484" y="643" width="88" height="32" uuid="de8d3278-d831-4f14-a2ba-b0dbe00d19be"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="441" y="643" width="43" height="32" uuid="adb04bbc-533e-4eaf-b013-1e54a0b92d6b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="398" y="675" width="43" height="15" uuid="5c4859da-b7d5-43d5-9be3-8c58d3a2a2b7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="355" y="675" width="43" height="15" uuid="97acf172-84e8-449f-bd04-0926f6bd7c26"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="312" y="675" width="43" height="15" uuid="03615f72-6ff7-4134-ab46-06538c1c175e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="269" y="675" width="43" height="15" uuid="64114ddb-b5b7-4847-8a5b-657ff5ffba88"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="643" width="215" height="32" uuid="8e4f0159-d623-463e-bb88-6e8daba688d9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="142" y="643" width="84" height="32" uuid="63b13de5-60af-40e9-b457-0bf45cf4cb19"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="-1" y="690" width="143" height="15" uuid="3b0ec217-2dd9-4f45-99ef-b98dbbb8c2e5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="303" y="605" width="268" height="20" uuid="2e4f2e1d-b45f-40b7-acd0-2a3887b9c549"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="460" y="605" width="112" height="20" uuid="51f6ccdf-c5b6-4cf7-862a-500e22a710ec"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="303" y="545" width="269" height="20" uuid="72b65e40-0c6d-48c0-869d-dde460f2b234"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="460" y="525" width="112" height="20" uuid="c509dbe4-faa6-4aa4-80f3-5fbc003338b5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="123" y="526" width="180" height="20" uuid="75d170d3-009d-425c-8d00-b176dcb5dd6b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="123" y="565" width="180" height="30" uuid="1482c33d-4f99-4af5-9ac7-6c12e8399e4f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="123" y="595" width="180" height="30" uuid="22b529df-b940-4a35-a681-26d032af9a6f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="595" width="123" height="30" uuid="8f42fef5-47c5-425a-b2b1-78fea846771d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="545" width="123" height="20" uuid="e0434852-25c4-419b-a433-ecf87712fd00"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="525" width="123" height="20" uuid="82db8816-c437-4a4d-bdde-833160a1dfa3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="309" y="457" width="263" height="20" uuid="eb1f0e15-2d72-4888-9a10-d45a8d189ba2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="443" y="457" width="129" height="20" uuid="3b56aff2-ec8e-43cc-a4ae-f88d8eda48a9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="169" y="437" width="210" height="20" uuid="946e6752-1188-42fb-b329-84466c72e051"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="169" y="417" width="210" height="20" uuid="658b3115-a3c9-497f-9e4a-6eea786732fa"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="457" width="169" height="20" uuid="bf71d304-c882-45bc-8429-6c8f72bf19d9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="139" width="572" height="85" uuid="856d1440-bfe3-49ff-b9ba-40951ee94a9f"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="473" y="908" width="100" height="13" uuid="0e472b7b-62f4-4610-8caa-e63fbc226917"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Page 1 of 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="388" y="908" width="35" height="13" uuid="e9ad3db4-5345-4534-a25e-4963ff16cd92"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Rev.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="209" y="908" width="62" height="13" uuid="907d9f7e-bbb1-44e4-a155-3376a4ac5281"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Effectivity:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="474" y="921" width="95" height="13" uuid="0e9f40e1-311b-4ee7-aa4c-2ce1aa597dd6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[(Duplicate)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="310" y="230" width="60" height="25" uuid="c2eda8c3-5bd3-4956-9196-78cba928abc9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_crossmatched}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="57" y="188" width="337" height="34" uuid="26e44160-5e20-4b42-bb90-a303a214d0a5"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{diagnosis}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="441" y="10" width="190" height="77" uuid="b12b3bbc-d5f0-4a32-9433-a5a2b6307175"/>
+				<imageExpression><![CDATA[$F{image_01}]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="50" y="144" width="147" height="13" uuid="88a81f8e-0a32-4102-84f9-540a97cfeefe"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{patient}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="476" y="158" width="12" height="13" uuid="7aaaa18a-a4e0-493d-998e-1a19e4213fa0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[of]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="82" width="33" height="13" uuid="f23faa26-b5dc-41c5-94fc-1f7611891ad7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Date: ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="490" y="158" width="50" height="13" uuid="79d2ada0-b992-45cf-85c4-4718259f8d12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{qtys}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="188" width="52" height="13" uuid="05aa7c0a-7a83-449e-af88-ed5ac6c00002"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Diagnosis:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="457" y="158" width="14" height="13" uuid="a5fe112a-c071-470a-af19-6cbde7ff6f75"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{units}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="144" width="54" height="13" uuid="89495f61-adc0-46d4-b1b5-0e3cd181814f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Patient:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="144" width="63" height="13" uuid="f2a3d1cf-b9be-4a03-9a53-d5ce43d859a6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Date of Birth:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="172" width="30" height="13" uuid="5ae830d4-cb21-4764-8be3-ae858a368031"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Ward:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="409" y="172" width="87" height="13" uuid="dc712086-4af4-42e9-a773-c67531896f1c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Type of Request:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="409" y="158" width="49" height="13" uuid="923c7051-318a-44c9-937e-eca46772afa2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[# of Units:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="230" width="97" height="13" uuid="313ca6cd-bb9c-4339-b323-c7d3d3a4994c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date Time Encoded :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1" y="13" width="572" height="13" uuid="85890010-8e72-4940-912e-178796e2cf98"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hosp_country}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="407" y="230" width="80" height="13" uuid="4bb96ee4-35a2-4cf1-ba90-d476fb68de97"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Date Time Done :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1" y="27" width="572" height="12" uuid="10385ef7-fc4f-4a32-82b7-5656ca6ae994"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hosp_agency}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="489" y="172" width="78" height="13" uuid="2b6e2b32-c608-48f5-9ab9-89ee57d283eb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{type_request}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="487" y="230" width="60" height="25" uuid="9691c3d1-60f3-469c-adcf-7c9b0ee372e9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_done}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="52" width="572" height="13" uuid="ea492b27-a68a-4d3c-9ab8-3dd6e12c60b1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hosp_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="33" y="172" width="361" height="13" uuid="e3730317-37f4-404a-8394-b054c16722fb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ward}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="410" y="146" width="54" height="13" uuid="0ad074cb-6543-43fd-833a-278dd1bcf843"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[HRN:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="409" y="188" width="161" height="13" uuid="ccea2f1a-5883-4a36-bb91-b0acaf8cfe70"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Indication: _______________________]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="264" y="144" width="128" height="13" uuid="89f4ea69-9dda-4591-b99d-76a8f45b650d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_birth}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="464" y="144" width="98" height="14" uuid="6690d0e0-eae9-4305-aa2e-1a984018b198"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hrn}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="66" width="571" height="13" uuid="8ae09ff5-b020-4b85-8966-098b18753727"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10"/>
+				</textElement>
+				<text><![CDATA[J.P. Laurel Avenue Bajada, Davao City]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="158" width="60" height="13" uuid="9f648c6b-8c3b-4275-bdfd-9411f27b33ee"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Age/Gender:]]></text>
+			</staticText>
+			<image>
+				<reportElement x="71" y="23" width="159" height="58" uuid="6aa54d46-5c0c-4896-8db3-a10384d9cf7c"/>
+				<imageExpression><![CDATA[$F{image_02}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="2" y="39" width="571" height="13" uuid="664f245d-c794-4201-a720-f8e8b85bd72a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10"/>
+				</textElement>
+				<text><![CDATA[Center for Health Development]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="50" y="158" width="143" height="13" uuid="d363f7ed-56c9-4858-81db-4b165c7dc3b1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{physician}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="98" width="572" height="13" uuid="49a98e98-6aab-482c-9b9e-12f7113307d3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{compa_header}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="158" width="53" height="13" uuid="50fa0ce1-1210-4b0b-8bbc-d413283b3855"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Physician:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="94" y="230" width="60" height="25" uuid="c3923684-9015-48c4-9f42-494d404f8c2f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_encoded}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="125" width="105" height="13" uuid="d4dc6ac6-dfc2-4dbb-9bfd-953d6454b04d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PATIENT'S DATA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="230" width="121" height="13" uuid="93d48a27-db72-49ad-85bb-9550a38c9708"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date Time Crossmatched :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="428" y="85" width="45" height="13" uuid="1f07b999-0dff-422e-9556-e2a50316952f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Lab. No.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="270" width="71" height="15" uuid="0eb92e9a-6016-4028-ab5c-b6310afe3e26"/>
+				<box leftPadding="5" rightPadding="10">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[PATIENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="255" width="279" height="15" uuid="fdf46682-1519-4c24-af4f-d70f2e58530e"/>
+				<box leftPadding="5" rightPadding="10">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Result of Compatibility]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="270" width="279" height="31" uuid="ac613acd-5b9e-46b9-ba84-bf1e6a334eb1"/>
+				<box leftPadding="5" rightPadding="10">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result_compatibility}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="0" y="255" width="71" height="15" uuid="499dd753-42e7-45d8-8beb-1fb2e65abbb8"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="286" width="71" height="15" uuid="8d5384ff-ad98-42f5-ba0a-956c8ef8573b"/>
+				<box leftPadding="5" rightPadding="10">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[DONOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="71" y="255" width="222" height="15" uuid="2bed5343-e029-45a3-a9ba-1350ff3a4d66"/>
+				<box leftPadding="5" rightPadding="10">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Blood Type]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="408" y="317" width="53" height="13" uuid="619f155d-7f8a-4c4e-b559-1b5730e01d39"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{source}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="317" width="47" height="13" uuid="f90f7446-976f-4031-850e-c0fd7ea48060"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Serial No.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="317" width="53" height="13" uuid="5789901e-5ff1-46fa-98d7-d19f84359d06"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Source:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="34" y="361" width="160" height="13" uuid="cfa59732-9a56-43a7-b77d-4747d8a7bd6a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Anatomic & Clinical Pathologist]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="301" y="317" width="64" height="13" uuid="f34a8f60-b732-469e-8ac0-e962650ba899"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Volume:_____]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="461" y="317" width="58" height="13" uuid="c81647ca-1c39-4371-a8e5-618b745bbe5e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Expiry Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="348" width="221" height="13" uuid="5d8335b6-b499-4e44-aa98-244cd5ad74f2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MARLON M. MARAMION., MD, FPSP,APCP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="369" width="572" height="14" uuid="6f297f3f-004a-444a-a751-0a89db4262f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="242" y="317" width="57" height="13" uuid="0c1ab568-2ec7-4f10-986b-ba774d7e7066"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{component}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="48" y="317" width="132" height="13" uuid="648c3f10-f60b-4db0-a5f7-156945aa9e82"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{serial}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="321" y="361" width="219" height="13" uuid="d61533e0-ab0e-4310-be11-f20590403411"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Medical Technologist]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="317" width="60" height="13" uuid="f617f661-130a-4550-9f77-6776af416b6d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Component:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="445" y="459" width="103" height="15" uuid="21c26029-c3df-421c-a600-5ca45c0495c8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date & Time:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="459" width="117" height="15" uuid="e60e12d9-af23-42ea-a416-c1307752d222"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ Signature:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="437" width="169" height="20" uuid="0c22c9d6-5129-4908-853e-e3af9c452598"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="286" y="392" width="259" height="13" uuid="7e1da8af-3bce-4914-a655-b1e81fd78523"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Transfusion Ordered by:________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="439" width="80" height="15" uuid="1e5295ea-e57a-4fc6-ab1b-bd02b5f91ba7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="169" y="457" width="140" height="20" uuid="7f327307-58b8-47ae-9d18-3bb6e3a71ac9"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="295" y="439" width="80" height="15" uuid="930029d8-4ddc-49e7-b116-eb0622d124dd"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[,RMT]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="379" y="417" width="193" height="20" uuid="6fee9799-f570-4483-8120-d71e578ae3a6"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="170" y="420" width="177" height="15" uuid="58767662-3e7d-4381-a9d6-a59a09ff15d3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="420" width="192" height="15" uuid="cdbced0e-7ac2-4710-8368-c721623debbf"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Time:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="460" width="161" height="15" uuid="baa55112-6c70-4ce0-a528-e0e8d3c4fad1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Blood Unit Received & Checked by:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="392" width="227" height="13" uuid="b9dcc8d7-f4e1-41ee-b896-cef4eaff0801"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[[ ] Consent for Transfusion Secured & Signed]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="543" y="396" width="22" height="13" uuid="f5c56d7f-3514-4e9e-bc21-f34b0604a460"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[,MD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="440" width="80" height="15" uuid="f0c888fa-bfdc-4b4c-b9ab-4f3078de2840"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[,RMT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="404" width="572" height="13" uuid="c0cad684-4e0b-4c24-9613-18dfdfe13af2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Blood Withdrawn from Blood Bank: (For Blood Bank Use )]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="417" width="169" height="20" uuid="1402ddbb-9c24-4bdb-b104-dd8642e10503"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="381" width="572" height="13" uuid="69688ab0-c4cc-488d-9522-975271099a47"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BLOOD TRANSFUSION RECORD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="419" width="161" height="15" uuid="cbe1fcb7-b42b-4557-b425-7a73d8b357b5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Blood Unit Issued :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="440" width="161" height="15" uuid="ef18c9ca-91c9-42e2-86dd-ae030827acb6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Blood Unit Issued & Checked by:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="440" width="100" height="15" uuid="1c0add31-0e9a-4d01-9ebe-a920f2318e36"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[2. Verified by:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="460" width="80" height="15" uuid="1cf41a25-04f3-4df7-a794-dd9864d04f4b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="548" width="80" height="15" uuid="7b5fc1dc-46c9-4ae3-9108-0da7ca401118"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="303" y="525" width="157" height="20" uuid="0e91a726-b60b-4bc5-a4ed-0f081dfeaba0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="303" y="565" width="269" height="20" uuid="69629391-3122-40b5-8305-6050b6f55bca"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="163" y="613" width="90" height="15" uuid="3ad23c66-acf9-44ca-9fbd-2ae81a3740d4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Name & Signature]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="492" width="572" height="13" uuid="c7c7d289-4b69-402b-a7ca-d4594c6c7528"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Patient armband, blood bag, compatibility label and information on this slip corresponds?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="463" y="608" width="69" height="15" uuid="cf839802-1b10-45af-b707-99c879131e10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Amount Given:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="123" y="545" width="180" height="20" uuid="c2d2b435-df89-468a-b4d3-4b0da5c95758"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="163" y="583" width="90" height="15" uuid="6367fd31-4417-447e-9f86-09dd19eb4f32"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Name & Signature]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="528" width="122" height="15" uuid="f979b971-8cb9-4147-9c93-c44769ea9a32"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Blood Unit Number:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="303" y="585" width="269" height="20" uuid="50fdd485-6eb8-49ec-8252-671b3bdc36dd"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="464" y="529" width="99" height="15" uuid="dbb89417-bd9c-4ac5-8ed9-995f365cb926"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Expiry:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="548" width="122" height="15" uuid="aa93a5b2-cb4b-4e05-866a-3a9badaed043"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Checked by:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="303" y="506" width="269" height="20" uuid="b75652b2-fa23-4f18-a4d4-7a328f3319a0"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="306" y="529" width="122" height="15" uuid="3ae73183-ad8d-48ec-ad80-6a9b4b1ceb56"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Unit Bld. Group]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="506" width="123" height="20" uuid="290c7f74-8c95-4c5d-ba91-2035bfe9270f"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="2" y="508" width="122" height="15" uuid="7335fa27-d56d-48e6-a203-3b9c38d94bd3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Patients Name:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="123" y="506" width="180" height="20" uuid="91b15bdf-5151-430d-a3da-9d9d61bedef2"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="305" y="508" width="122" height="15" uuid="395d86ad-b099-4f1d-a6ac-ffe97db1b7e6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Patients Bld. Group:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="602" width="126" height="15" uuid="bc912eb8-40b4-40b1-b8db-a609fdc1b3ca"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Transfusion Terminated by:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="125" y="549" width="80" height="15" uuid="f57cd8ae-2ba3-4b23-8b4c-76aba8fdd78e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="565" width="123" height="30" uuid="59440869-98c7-4988-9f80-c3eb7263c610"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="305" y="568" width="122" height="15" uuid="4e216b15-d521-4506-be88-c024c6595b56"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date & Time Started:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="573" width="122" height="15" uuid="73588d73-fed8-4e19-88b5-3f0e42f5c959"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Blood Unit Transfused by:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="306" y="587" width="122" height="15" uuid="27fa96c4-6695-47eb-9b39-fdfd9f6a933b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date & Time Terminated:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="479" width="572" height="13" uuid="2e07a19d-6db7-4f3f-a0d4-180662ac76b3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[THIS PORTION TO BE ACCOMPLISHED BY THE STAFF ADMINISTERING THE BLOOD UNIT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="306" y="607" width="122" height="15" uuid="c727d1cd-a8fa-4097-83af-2695cbc0ab77"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[No. of Hours Consumed:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="312" y="690" width="43" height="15" uuid="3899f7cd-e212-4ee4-ae5a-074e1247f341"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="495" y="660" width="64" height="13" uuid="c9ee411f-8cf9-4f86-8ea0-8f9ed121caf8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Transfusion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="676" width="43" height="15" uuid="acf81fb2-712b-4df5-86b9-0bcbeabe14a1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[2 Hrs]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="142" y="705" width="84" height="15" uuid="7f27c0ce-d671-40a4-a593-0c344f808482"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="312" y="705" width="43" height="15" uuid="ad56ef69-8ff5-45de-86ce-d142b2a13714"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="780" width="136" height="13" uuid="c67ab81c-2960-437f-a2b1-0ab093ce0fa2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Signature of Physician]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="359" y="768" width="205" height="13" uuid="66b639ba-6254-4024-9acf-3584b005dbeb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[_________________________________________RN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="204" y="662" width="251" height="13" uuid="08aefd1e-6b64-485d-a276-b9a505e4cb77"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[During Blood Transfusion]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="269" y="705" width="43" height="15" uuid="df0d8da8-35f8-4c9b-9309-7bcd1944b1ee"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="269" y="675" width="43" height="15" uuid="345bceb9-eb92-4982-a4d8-4b1a66ff1db1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[30 mins]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="226" y="675" width="43" height="15" uuid="12d41b13-0239-4cc2-a0d9-a5244143e879"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="441" y="735" width="43" height="15" uuid="e28ba729-611e-459f-bb1e-6efcb1b87e62"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="142" y="690" width="84" height="15" uuid="8e566a0b-4c02-4148-8cf9-e107cb9bc3eb"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="150" y="660" width="64" height="13" uuid="d7f916f1-84f8-4494-89f0-fb40e0c90cbf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Transfusion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="780" width="157" height="13" uuid="5a26bd2f-b67a-4fff-8045-b43bfb70e844"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Signature of Registered Nurse]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="313" y="675" width="43" height="15" uuid="81059828-bca2-4d5f-a3d5-7031fca3d205"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[1 Hr]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="441" y="690" width="43" height="15" uuid="c31b2f19-a15e-4290-a728-603fcb7a6253"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="398" y="735" width="43" height="15" uuid="601dcd82-bd53-4fb6-b81d-8396d129ca00"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="312" y="720" width="43" height="15" uuid="f34080c1-c06d-41ca-8a81-beffae54bd70"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="735" width="43" height="15" uuid="351cefed-730f-4200-89a7-b0a03a4330e0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="484" y="705" width="88" height="15" uuid="497e8dc7-34e7-4251-9537-4a77d2b06e18"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="441" y="720" width="43" height="15" uuid="d7bc7870-60d6-4a76-9925-4216f076ffdb"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="691" width="106" height="13" uuid="2f100f8b-0cf1-431f-95a7-a75d9ecd2795"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Temperature]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="-1" y="705" width="143" height="15" uuid="d93fbc15-fabf-4c21-8309-aad02d5b8f50"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="226" y="675" width="43" height="15" uuid="d6861287-9fb2-417a-9863-cabecd4bf7bc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[15 mins]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="645" width="67" height="13" uuid="afbb5b0d-5549-49d8-a9e0-33c582d847ef"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Prior to Blood]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="751" width="227" height="13" uuid="f87e39ad-ead5-4644-9dab-11bc72906f97"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Signs and Symptoms: ___________________________]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="-1" y="735" width="143" height="15" uuid="769ee53f-78c7-487b-b1a5-cfc977bcd544"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="-1" y="675" width="143" height="15" uuid="88a29579-08d4-4430-896d-6fecaa8d4f66"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="269" y="735" width="43" height="15" uuid="80789043-98ac-4348-abf5-f630e9b04433"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="397" y="676" width="43" height="15" uuid="c7a27f41-6d14-4973-a0ff-d2f71f5638ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[3 Hrs]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="142" y="735" width="84" height="15" uuid="7eb87fff-8bb9-4a46-8626-d15d1ee2efcd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="484" y="735" width="88" height="15" uuid="20574874-83c7-4aaa-9850-ddd0b3d19d5f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="441" y="675" width="43" height="15" uuid="b065bdf4-16b0-4f55-a9e2-b1fc2ab9b7a9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="269" y="720" width="43" height="15" uuid="3d2e4877-a1b7-401d-bc52-0a461600847e"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="495" y="645" width="64" height="13" uuid="1d6add6d-372f-45cf-a61b-451e1edc3e89"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[After]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="226" y="690" width="43" height="15" uuid="bcef00e8-93c5-47f4-ad4a-517652fbe18d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="355" y="735" width="43" height="15" uuid="7e7e0c36-c5e4-49dc-87bb-6a2a0f3f7e78"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="441" y="705" width="43" height="15" uuid="0d238d24-7f4e-4a4d-b89e-8eb15e8e6c39"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="-1" y="720" width="143" height="15" uuid="986f2e5d-0002-47dd-be91-d914d8e5adf4"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="720" width="107" height="13" uuid="90fa0d84-205a-4262-8a45-b151742ea824"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[RR]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="355" y="705" width="43" height="15" uuid="3290b10d-dec6-4ced-8033-da51bb33c971"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="441" y="676" width="43" height="15" uuid="f4db6a4f-7222-47fe-848c-a4ff6d97e889"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[4 Hrs]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="269" y="690" width="43" height="15" uuid="d168fdfb-245d-463d-96e3-35ebb8aa576e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="355" y="690" width="43" height="15" uuid="339c4be1-6bae-45a6-ac2d-5b621593d182"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="398" y="690" width="43" height="15" uuid="26a50189-75f7-46a9-8098-0a2715a2b4e9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="142" y="675" width="84" height="15" uuid="4b88cbfe-3ef2-4205-b116-f29a215c72bb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="398" y="705" width="43" height="15" uuid="43a09568-ac81-4372-8bda-97cd3558e2b1"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="484" y="675" width="88" height="15" uuid="d0d47046-4033-4c03-80e3-5518ef57db0b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="398" y="720" width="43" height="15" uuid="f9a34076-0490-4c42-b075-164d4fa08087"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="767" width="174" height="13" uuid="37b16ad6-a709-4ae4-9ba3-d218dd808cb2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[________________________________MD]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="226" y="705" width="43" height="15" uuid="a54a8a56-1f97-486b-a33d-4fe78539c27e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="484" y="720" width="88" height="15" uuid="fdc0b13e-5c05-4845-add7-a527f30e2329"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="484" y="690" width="88" height="15" uuid="279ca816-ef8c-412e-8f63-7ece74c1bf76"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="735" width="107" height="13" uuid="98c8e888-de57-4079-bf4e-b8e28a49b634"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="706" width="106" height="13" uuid="c1c3e77b-fbfd-4925-9e24-e65ed467b663"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Blood Pressure]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="-1" y="643" width="143" height="32" uuid="bad354cd-93f7-43b9-8717-d803c312c9cd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="720" width="43" height="15" uuid="4350430c-d02c-4f43-be34-1555c11ea8e0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="312" y="735" width="43" height="15" uuid="6126a033-3550-42b2-ba19-7bfb3c7f0f3a"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="6" y="662" width="123" height="13" uuid="6c211248-7646-4a7d-ae16-b26c9fab22c4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[VITAL SIGNS]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="355" y="720" width="43" height="15" uuid="98e42401-a6de-4b04-86f3-3eeafc448ffa"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="142" y="720" width="84" height="15" uuid="9a2d375c-98d4-4a41-8f64-3c682fea9c42"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="1" y="751" width="227" height="13" uuid="1705990b-313f-4be3-84c4-49d665fe739b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Transfusion Reaction Noted:    [   ] YES    [   ] NO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="629" width="572" height="13" uuid="c9f40eae-2291-45f6-9ed4-2eac406b8ce0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VITAL SIGNS MONITORING]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="868" width="94" height="13" uuid="15101f1c-ffc4-483e-ad15-dab66dd0b8fb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Consumed bag: [    ]  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="880" width="279" height="13" uuid="d39f1af4-21cc-4ff3-ba64-a58baa6b1ee0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Received by: ______________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="808" width="542" height="13" uuid="3e09b479-4acf-4266-98d2-543b4495730c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[To be accomplished in DUPLICATE. Please attach the ORIGINAL copy in chart & return DUPLICATE COPY to Blood Bank]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="854" width="501" height="13" uuid="ba10009f-f373-4f8d-9cb1-f1364fab40fe"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TO BE ACCOMPLISHED BY THE BLOOD TRANSFUSION PERSONNEL ON RETURN OF CONSUMED UNIT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="321" y="869" width="252" height="13" uuid="2f79e163-fa15-489e-9e38-f41da1efeb93"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Take note of amount of remaining blood:_________cc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="835" width="21" height="13" uuid="12389f21-6a83-4a3d-a4ea-78e20e3a54bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[*]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="893" width="208" height="13" uuid="e7d5e58c-193e-41a1-8934-6af182f6035b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Retention time: 5 yrs.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="797" width="136" height="13" uuid="379c1183-7625-4efe-983c-16b2a1d6ec6b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IMPORTANT:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="821" width="542" height="13" uuid="7d2c490c-43d1-472c-9182-466f2a49a505"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[as soon as transfusion is finished.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="321" y="879" width="230" height="13" uuid="36f876e6-7b6e-4ab4-8bdb-f97c28fd3696"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Date:____________________                Time:_________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="809" width="21" height="13" uuid="eddb71d2-901c-423f-be1a-74ee98e1d259"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[*]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="843" width="538" height="13" uuid="2f3f642f-4052-42fa-af0d-95fba41b22aa"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="834" width="551" height="13" uuid="f2687aa6-077f-484b-be59-d85bcae3a956"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[IN CASE OF TRANSFUSION REACTION, INFORM BLOOD BANK &  ACCOMPLISH BLOOD TRANSFUSION REACTION REGISTRY]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="265" y="157" width="127" height="13" uuid="6f5e91aa-773f-472b-beec-d9e2e9f475c8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{age}+" / "+$P{gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="321" y="348" width="219" height="13" forecolor="#000000" backcolor="#FFFFFF" uuid="211bf79f-0e3c-404a-a73f-01123cad7c41"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="DejaVu Sans" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{medtech}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="908" width="208" height="20" uuid="8f60054f-9c6e-4441-b491-7625c8b31ce6"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{footer}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="6" y="111" width="560" height="15" uuid="9e2de25f-459f-4f01-8db2-a1fde40c7fde"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{color_code}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="267" y="908" width="96" height="13" uuid="88069e30-0b97-4447-a881-9c88254a8f02"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{effectivity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="418" y="908" width="44" height="13" uuid="8405f9cc-990e-4b8e-93d6-35847d31f117"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rev}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="71" y="270" width="222" height="15" uuid="d3d791be-593e-4c02-a721-756464d5a12b"/>
+				<box leftPadding="5" rightPadding="10">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{patient_blood_type}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="71" y="286" width="222" height="15" uuid="afd2dd50-9b19-4677-9602-032c26bee4d1"/>
+				<box leftPadding="5" rightPadding="10">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{donor_blood_type}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="33" y="82" width="147" height="13" uuid="6be5e675-6255-42cf-89b2-fd4b0410b2a2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_generated}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="428" y="98" width="141" height="13" uuid="03f30a13-1a2f-4d76-8f9b-5b6c04722457"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lis_order_no}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="519" y="317" width="60" height="25" uuid="a02ccf6a-7dc9-44a2-8d7c-b02c999d3917"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{expiry_date}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="473" y="87" width="99" height="13" uuid="dfa0ef2c-36f0-49cc-854a-56f56e466f32"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lab_no}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="250">
+			<printWhenExpression><![CDATA[($P{printbloodlabel}).equals('1')]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="10" width="115" height="16" uuid="f2de8677-1b63-4683-99e4-79e84761fa8e"/>
+				<box leftPadding="5" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Patient's Name :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="115" y="10" width="285" height="16" uuid="c6ce71f9-fe66-4700-91fc-07ded5a10c9b"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{patient}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="26" width="115" height="16" uuid="ab61e432-0720-405f-9b0a-a9560c686d0b"/>
+				<box leftPadding="5" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[HRN :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="115" y="26" width="285" height="16" uuid="0861ed22-bd8c-4deb-ab32-4fa2e066abe6"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hrn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="115" y="42" width="285" height="13" uuid="a80d74b3-95aa-4c6b-8d3d-0843f58605b9"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_birth}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="42" width="115" height="13" uuid="3b860f08-6401-4a73-ba42-6a074bcd869d"/>
+				<box leftPadding="5" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Birth Date :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="115" y="53" width="285" height="13" uuid="f3715577-296a-464c-841b-48b75b660c6f"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{gender}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="53" width="115" height="13" uuid="7eb9a4ae-5ce5-4f4c-9716-0ce6c35fcb46"/>
+				<box leftPadding="5" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Sex :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="115" y="66" width="285" height="13" uuid="ddad2a9c-410d-429b-9c01-b77e1224ef0b"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ward}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="66" width="115" height="13" uuid="38204538-58ed-4c7b-b76d-f509705ef6f7"/>
+				<box leftPadding="5" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Ward :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="115" y="135" width="285" height="13" uuid="630dc738-eb50-4fd0-9072-493b5842a4e3"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{component}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="135" width="115" height="13" uuid="9a8355e8-1607-4349-8f9f-3156c7c4dd81"/>
+				<box leftPadding="5" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Component :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="115" y="148" width="285" height="13" uuid="d2207ad8-9ffa-41b9-9b4c-9291fb028c2e"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{expiry_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="148" width="115" height="13" uuid="2ad09ef1-043b-4c98-8cd0-4d6d7645be69"/>
+				<box leftPadding="5" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Expiry Date :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="115" y="118" width="285" height="16" uuid="50fee68f-880b-4af7-b359-2dd6e482e8ce"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{serial}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="118" width="115" height="16" uuid="98b2a3b7-1bee-45c2-afea-338611142edb"/>
+				<box leftPadding="5" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Serial Number :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="115" y="79" width="285" height="13" uuid="5ea19e6b-1396-4b6e-840f-8a42224aeb2c"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{patient_blood_type}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="79" width="115" height="13" uuid="bf5be116-17a8-4d25-a681-0d06481c4f0b"/>
+				<box leftPadding="5" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Patient's Blood Type :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="115" y="92" width="285" height="13" uuid="1598b062-398b-4289-bfd6-fd48939286c9"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{donor_blood_type}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="92" width="115" height="13" uuid="acffc115-0036-439b-b854-516ff5451ca9"/>
+				<box leftPadding="5" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Donor's Blood Type :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="237" width="538" height="13" uuid="2d7cf559-76af-4af4-a132-6559af012545"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  ]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="191" width="219" height="13" forecolor="#000000" backcolor="#FFFFFF" uuid="62e88392-d2c4-448d-8286-bbb8fb2acda3"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="DejaVu Sans" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{medtech}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="204" width="219" height="13" uuid="94c91437-2acd-4a26-9510-b028237e7d55"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Medical Technologist]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="115" y="161" width="285" height="13" uuid="18501074-d9da-4f50-b104-de697af56bb5"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_crossmatched}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="161" width="115" height="13" uuid="9c436e4e-b797-40df-aa70-015e2787d531"/>
+				<box leftPadding="5" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Crossmatched Date :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="115" y="105" width="285" height="13" uuid="aeaf1281-76cb-43e7-94f2-166dfbbba4bc"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result_compatibility}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="105" width="115" height="13" uuid="1091401f-fc5c-4a7d-ae33-caf654005255"/>
+				<box leftPadding="5" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Result :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="226" width="71" height="11" uuid="c74723c0-e6ac-4179-a383-f13a651a677d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{generic_footer}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="230" y="226" width="35" height="11" uuid="5ea73ec4-d3cb-4385-9bb8-844c9ac7c24c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Rev.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="71" y="226" width="62" height="11" uuid="85735c9b-a81d-4e42-b52b-3e2240bc8fab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Effectivity:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="226" width="44" height="11" uuid="6f25be12-7469-4931-9154-7eb10ecf2529"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{generic_rev}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="129" y="226" width="96" height="11" uuid="8add09b9-bf4c-4750-8c2e-f0e51c9d2219"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{generic_effectivity}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

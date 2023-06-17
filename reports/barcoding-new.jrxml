@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="barcoding-new" language="groovy" pageWidth="792" pageHeight="150" orientation="Landscape" columnWidth="778" leftMargin="7" rightMargin="7" topMargin="7" bottomMargin="7">
+	<property name="ireport.zoom" value="1.6500000000000028"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="en" class="java.lang.String"/>
+	<parameter name="NAME_PATIENT" class="java.lang.String"/>
+	<parameter name="pid" class="java.lang.String"/>
+	<parameter name="Gender" class="java.lang.String"/>
+	<parameter name="img_dmc" class="java.lang.String"/>
+	<parameter name="age" class="java.lang.String"/>
+	<parameter name="DateOfAdd" class="java.lang.String"/>
+	<parameter name="NAME_PATIENT_short" class="java.lang.String"/>
+	<parameter name="date_label" class="java.lang.String"/>
+	<parameter name="adm_label" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="136" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="155" y="36" width="231" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NAME_PATIENT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="86" y="39" width="65" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Patient:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="273" y="68" width="90" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Gender}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="209" y="68" width="64" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender:]]></text>
+			</staticText>
+			<image scaleImage="FillFrame" hAlign="Center">
+				<reportElement stretchType="RelativeToTallestObject" x="24" y="44" width="60" height="60"/>
+				<imageExpression><![CDATA[$P{img_dmc}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="86" y="68" width="39" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="128" y="68" width="73" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="85" width="180" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DateOfAdd}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="308" y="16" width="81" height="18"/>
+				<textElement verticalAlignment="Middle" rotation="None">
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pid}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="266" y="16" width="40" height="18"/>
+				<textElement verticalAlignment="Middle" rotation="None">
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HRN:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="156" y="39" width="231" height="30" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NAME_PATIENT_short}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="86" y="85" width="134" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_label}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="85" y="85" width="133" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{adm_label}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="44" y="11" width="206" height="28"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128A" drawText="false" checksumRequired="false" barWidth="0">
+					<jr:codeExpression><![CDATA[$P{pid}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

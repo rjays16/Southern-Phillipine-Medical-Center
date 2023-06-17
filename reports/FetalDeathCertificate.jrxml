@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FetalDeathCertificate" language="groovy" pageWidth="612" pageHeight="1008" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="1.000000000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="354"/>
+	<field name="death_place_mun" class="java.lang.String"/>
+	<field name="registry_nr" class="java.lang.String"/>
+	<field name="name_first" class="java.lang.String"/>
+	<field name="name_middle" class="java.lang.String"/>
+	<field name="name_last" class="java.lang.String"/>
+	<field name="sex_f" class="java.lang.String"/>
+	<field name="sex_m" class="java.lang.String"/>
+	<field name="sex_u" class="java.lang.String"/>
+	<field name="delivery_date" class="java.lang.String"/>
+	<field name="birth_place" class="java.lang.String"/>
+	<field name="birth_type_s" class="java.lang.String"/>
+	<field name="birth_type_twin" class="java.lang.String"/>
+	<field name="birth_type_tr" class="java.lang.String"/>
+	<field name="birth_rank_f" class="java.lang.String"/>
+	<field name="birth_rank_s" class="java.lang.String"/>
+	<field name="birth_rank_o" class="java.lang.String"/>
+	<field name="birth_rank_others" class="java.lang.String"/>
+	<field name="delivery_method_n" class="java.lang.String"/>
+	<field name="delivery_method_o" class="java.lang.String"/>
+	<field name="delivery_method_info" class="java.lang.String"/>
+	<field name="birth_order" class="java.lang.String"/>
+	<field name="birth_weight" class="java.lang.String"/>
+	<field name="m_name_first" class="java.lang.String"/>
+	<field name="m_name_middle" class="java.lang.String"/>
+	<field name="m_name_last" class="java.lang.String"/>
+	<field name="m_citizenship" class="java.lang.String"/>
+	<field name="m_religion" class="java.lang.String"/>
+	<field name="m_occupation" class="java.lang.String"/>
+	<field name="m_age" class="java.lang.String"/>
+	<field name="m_total_alive" class="java.lang.String"/>
+	<field name="m_still_living" class="java.lang.String"/>
+	<field name="m_now_dead" class="java.lang.String"/>
+	<field name="m_address_long" class="java.lang.String"/>
+	<field name="m_address_shorter" class="java.lang.String"/>
+	<field name="no_f_name" class="java.lang.String"/>
+	<field name="f_name_first" class="java.lang.String"/>
+	<field name="f_name_middle" class="java.lang.String"/>
+	<field name="f_name_last" class="java.lang.String"/>
+	<field name="f_citizenship" class="java.lang.String"/>
+	<field name="f_religion" class="java.lang.String"/>
+	<field name="f_occupation" class="java.lang.String"/>
+	<field name="f_age" class="java.lang.String"/>
+	<field name="parent_marriage_info_tmp" class="java.lang.String"/>
+	<field name="death_occurrence_b" class="java.lang.String"/>
+	<field name="death_occurrence_d" class="java.lang.String"/>
+	<field name="death_occurrence_u" class="java.lang.String"/>
+	<field name="pregnancy_length" class="java.lang.String"/>
+	<field name="attendant_type_1" class="java.lang.String"/>
+	<field name="attendant_type_2" class="java.lang.String"/>
+	<field name="attendant_type_3" class="java.lang.String"/>
+	<field name="attendant_type_4" class="java.lang.String"/>
+	<field name="attendant_type_5" class="java.lang.String"/>
+	<field name="attendant_type_6" class="java.lang.String"/>
+	<field name="attendant_type_others" class="java.lang.String"/>
+	<field name="death_time" class="java.lang.String"/>
+	<field name="doctor_name" class="java.lang.String"/>
+	<field name="doctor_name_short" class="java.lang.String"/>
+	<field name="doctor_name_short_2" class="java.lang.String"/>
+	<field name="attendant_title" class="java.lang.String"/>
+	<field name="attendant_address" class="java.lang.String"/>
+	<field name="attendant_date_sign" class="java.lang.String"/>
+	<field name="burial_permit" class="java.lang.String"/>
+	<field name="burial_date_issued" class="java.lang.String"/>
+	<field name="corpse_disposal_tmp1" class="java.lang.String"/>
+	<field name="corpse_disposal_tmp2" class="java.lang.String"/>
+	<field name="corpse_disposal_tmp3" class="java.lang.String"/>
+	<field name="corpse_disposal_others" class="java.lang.String"/>
+	<field name="is_autopsy_yes" class="java.lang.String"/>
+	<field name="is_autopsy_no" class="java.lang.String"/>
+	<field name="informant_name" class="java.lang.String"/>
+	<field name="informant_relation" class="java.lang.String"/>
+	<field name="informant_address" class="java.lang.String"/>
+	<field name="informant_date_sign" class="java.lang.String"/>
+	<field name="encoder_name" class="java.lang.String"/>
+	<field name="encoder_title" class="java.lang.String"/>
+	<field name="encoder_date_sign" class="java.lang.String"/>
+	<field name="informant_address_short" class="java.lang.String"/>
+	<field name="informant_address_shorter" class="java.lang.String"/>
+	<field name="encoder_name_short" class="java.lang.String"/>
+	<field name="encoder_name_shorter" class="java.lang.String"/>
+	<pageHeader>
+		<band height="1008">
+			<textField>
+				<reportElement x="103" y="132" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{death_place_mun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="368" y="132" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registry_nr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="133" y="173" width="113" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name_first}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="246" y="173" width="108" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name_middle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="358" y="173" width="114" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name_last}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="136" y="199" width="30" height="20"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sex_f}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="62" y="199" width="28" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sex_m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="62" y="209" width="28" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sex_u}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="201" width="153" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{delivery_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="136" y="234" width="362" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{birth_place}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="63" y="257" width="28" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{birth_type_s}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="137" y="257" width="30" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{birth_type_twin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="267" width="26" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{birth_type_tr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="258" width="30" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{birth_rank_f}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="358" y="259" width="26" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{birth_rank_s}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="267" width="29" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{birth_rank_o}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="386" y="266" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{birth_rank_others}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="290" width="28" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{delivery_method_n}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="299" width="28" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{delivery_method_o}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="302" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{delivery_method_info}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="227" y="300" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{birth_order}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="398" y="300" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{birth_weight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="133" y="327" width="113" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{m_name_first}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="246" y="327" width="108" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{m_name_middle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="358" y="327" width="114" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{m_name_last}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="355" width="78" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{m_citizenship}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="125" y="350" width="76" height="28"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{m_religion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="355" width="126" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{m_occupation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="355" width="36" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{m_age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="113" y="388" width="58" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{m_total_alive}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="205" y="388" width="55" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{m_still_living}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="387" y="388" width="63" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{m_now_dead}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="136" y="417" width="362" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{m_address_long}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="136" y="418" width="362" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{m_address_shorter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="133" y="449" width="113" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{f_name_first}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="246" y="449" width="108" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{f_name_middle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="358" y="449" width="114" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{f_name_last}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="477" width="78" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{f_citizenship}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="118" y="475" width="86" height="25"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{f_religion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="219" y="477" width="126" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{f_occupation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="478" width="36" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{f_age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="616" width="23" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{death_occurrence_b}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="616" width="25" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{death_occurrence_d}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="364" y="617" width="30" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{death_occurrence_u}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="238" y="632" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pregnancy_length}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="151" y="647" width="40" height="20"/>
+				<textElement>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendant_type_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="221" y="648" width="34" height="20"/>
+				<textElement>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendant_type_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="648" width="35" height="20"/>
+				<textElement>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendant_type_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="341" y="648" width="35" height="20"/>
+				<textElement>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendant_type_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="53" y="657" width="40" height="20"/>
+				<textElement>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendant_type_5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="657" width="196" height="20"/>
+				<textElement>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendant_type_others}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="341" y="658" width="36" height="20"/>
+				<textElement>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendant_type_6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="207" y="690" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{death_time}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="86" y="727" width="174" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{doctor_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="86" y="727" width="200" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{doctor_name_short}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="86" y="727" width="200" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{doctor_name_short_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="94" y="736" width="167" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendant_title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="68" y="753" width="207" height="34"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="DejaVu Sans" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendant_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="771" width="211" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendant_date_sign}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="62" y="802" width="32" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{corpse_disposal_tmp1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="144" y="803" width="35" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{corpse_disposal_tmp2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="62" y="814" width="32" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{corpse_disposal_tmp3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="151" y="814" width="70" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{corpse_disposal_others}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="405" y="801" width="32" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{is_autopsy_yes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="405" y="813" width="32" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{is_autopsy_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="89" y="875" width="156" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{informant_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="296" y="870" width="177" height="34"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="DejaVu Sans" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{informant_address}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="296" y="870" width="176" height="34"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{informant_address_short}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="299" y="866" width="174" height="34"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{informant_address_shorter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="888" width="138" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{informant_date_sign}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="123" y="887" width="141" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{informant_relation}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="89" y="935" width="153" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{encoder_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="103" y="944" width="196" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{encoder_title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="67" y="955" width="156" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{encoder_date_sign}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="245" y="449" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no_f_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="45" y="508" width="400" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{parent_marriage_info_tmp}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="290" y="802" width="108" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{burial_permit}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="290" y="813" width="108" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{burial_date_issued}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="89" y="934" width="166" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{encoder_name_short}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="92" y="932" width="194" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{encoder_name_shorter}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+</jasperReport>

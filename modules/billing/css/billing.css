@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 0.8em;
+}
+
+thead.togglehdr th.toggleth {
+	cursor: pointer;
+}
+
+tbody.billfooter td.billftr1 {
+	border-right:hidden;
+}
+
+tbody.billfooter td.billftr2 {
+	border-left:hidden;
+}
+
+#accListDetails,
+#mdListDetails,
+#supListDetails,
+#docRoleArea,
+#hsListDetails,
+#opsListDetails,
+#mscListDetails {
+	border-collapse:collapse;
+}
+
+#accListDetails img,
+#mdListDetails img,
+#supListDetails img,
+#docRoleArea img,
+#hsListDetails img,
+#opsListDetails img,
+#mscListDetails img {
+	float:right;
+}
+
+#accListDetails div.arrow,
+#mdListDetails div.arrow,
+#supListDetails div.arrow,
+#docRoleArea div.arrow,
+#hsListDetails div.arrow,
+#opsListDetails div.arrow,
+#mscListDetails div.arrow {
+    background: transparent url(../../../images/arrows.png) no-repeat scroll 0 -16px;
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+#accListDetails div.up,
+#mdListDetails div.up,
+#supListDetails div.up,
+#docRoleArea div.up,
+#hsListDetails div.up,
+#opsListDetails div.up,
+#mscListDetails div.up {
+    background-position: 0 0;
+}
+
+.section {
+    width: 96%;
+    margin: 10px 0 10px 0;
+}
+
+.sub-total{
+    text-align: right;
+}
+
+#xlo-tabs{
+    margin-bottom: 5px;
+}
+
+#xlo-tabs .ui-widget-content{
+    background: #fff !important;
+}
+
+#btnaddmisc_srvc{
+    margin-left: 20px !important;
+}
+
+.loading-ui-text {
+    font: bold 12px Arial, Helvetica, Sans-Serif;
+    display: none;
+}
+
+.loading-ui-animation {
+    display: none;
+    float: left;
+}
+
+.right-align {
+	float:right;
+    text-align: right;
+}
+
+.left-align {
+    float: left;
+    text-align: left;
+}
+
+.currency{
+    text-align: right;
+}
+
+.jquery-ui-red .ui-dialog-titlebar,
+.jquery-ui-red .ui-dialog-buttonpane .ui-dialog-buttonset .ui-button{
+	background-image: none !important;
+}
+
+.jquery-ui-red .ui-dialog-titlebar,
+.jquery-ui-red .ui-dialog-buttonpane .ui-dialog-buttonset .ui-button{
+	background-color: #f00 !important;
+}

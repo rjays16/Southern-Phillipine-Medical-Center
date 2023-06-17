@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="IC_Vaccination_Certificate" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.7715610000000017"/>
+	<property name="ireport.x" value="76"/>
+	<property name="ireport.y" value="216"/>
+	<parameter name="hrn" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="age" class="java.lang.Double"/>
+	<parameter name="sex" class="java.lang.String"/>
+	<parameter name="status" class="java.lang.String"/>
+	<parameter name="address" class="java.lang.String"/>
+	<parameter name="tetanus1" class="java.lang.String"/>
+	<parameter name="tetanus2" class="java.lang.String"/>
+	<parameter name="tetanus3" class="java.lang.String"/>
+	<parameter name="deltoid1" class="java.lang.String"/>
+	<parameter name="deltoid2" class="java.lang.String"/>
+	<parameter name="deltoid3" class="java.lang.String"/>
+	<parameter name="date1" class="java.lang.String"/>
+	<parameter name="date2" class="java.lang.String"/>
+	<parameter name="date3" class="java.lang.String"/>
+	<parameter name="hepatitis1" class="java.lang.String"/>
+	<parameter name="hepatitis2" class="java.lang.String"/>
+	<parameter name="hepatitis3" class="java.lang.String"/>
+	<parameter name="deltoid4" class="java.lang.String"/>
+	<parameter name="deltoid5" class="java.lang.String"/>
+	<parameter name="deltoid6" class="java.lang.String"/>
+	<parameter name="date4" class="java.lang.String"/>
+	<parameter name="date5" class="java.lang.String"/>
+	<parameter name="date6" class="java.lang.String"/>
+	<parameter name="signatory1" class="java.lang.String"/>
+	<parameter name="signatory2" class="java.lang.String"/>
+	<parameter name="license1" class="java.lang.String"/>
+	<parameter name="license2" class="java.lang.String"/>
+	<parameter name="jobtitle1" class="java.lang.String"/>
+	<parameter name="jobtitle2" class="java.lang.String"/>
+	<parameter name="address_short" class="java.lang.String"/>
+	<field name="doh" class="java.lang.String"/>
+	<field name="dmc" class="java.lang.String"/>
+	<title>
+		<band height="752" splitType="Stretch">
+			<image>
+				<reportElement x="38" y="13" width="80" height="80"/>
+				<imageExpression><![CDATA[$F{doh}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="452" y="13" width="80" height="80"/>
+				<imageExpression><![CDATA[$F{dmc}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="13" width="572" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[Republic of the Philippines]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="28" width="572" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[DEPARTMENT OF HEALTH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="41" width="572" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Center for Health Development for Davao Region]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="56" width="572" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10"/>
+				</textElement>
+				<text><![CDATA[Southern Philippines Medical Center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="70" width="572" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[J. P. Laurel Avenue, Davao City]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="85" width="572" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[Tel. Nos. 227-27-31; Fax No. 221-7029]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="107" width="572" height="1"/>
+			</line>
+			<line>
+				<reportElement x="0" y="110" width="572" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="112" width="571" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[VACCINATION CERTIFICATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="128" width="29" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[HRN:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="225" y="142" width="35" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="44" y="175" width="104" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[This is to certify that]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="364" y="175" width="12" height="20"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="175" width="48" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[years old]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="485" y="175" width="12" height="20"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="550" y="175" width="10" height="20"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="557" y="175" width="13" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[a]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="18" y="198" width="58" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[resident of]]></text>
+			</staticText>
+			<line>
+				<reportElement x="74" y="213" width="325" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="401" y="198" width="169" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[received the following vaccine/s:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="258" y="128" width="58" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hrn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="142" width="164" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="175" width="216" height="20"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="148" y="192" width="216" height="1"/>
+			</line>
+			<textField>
+				<reportElement x="375" y="175" width="15" height="20"/>
+				<box bottomPadding="0">
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{age}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="374" y="192" width="15" height="1"/>
+			</line>
+			<textField>
+				<reportElement x="441" y="175" width="45" height="20"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sex}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="440" y="192" width="45" height="1"/>
+			</line>
+			<textField>
+				<reportElement x="494" y="175" width="57" height="20"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{status}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="493" y="191" width="57" height="1"/>
+			</line>
+			<textField>
+				<reportElement x="76" y="198" width="325" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{address}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="69" y="232" width="93" height="14"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[TETANUS TOXOID:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="99" y="265" width="19" height="19"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tetanus1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="126" y="265" width="340" height="20"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[1st DOSE: TETANUS TOXOID VACCINE; 0.5 ml, INTRAMUSCULAR @]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="464" y="263" width="47" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deltoid1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="511" y="263" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[DELTOID;]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="126" y="282" width="132" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="258" y="282" width="227" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[: SPMC - Health Service and Specialty Clinic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="258" y="321" width="227" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[: SPMC - Health Service and Specialty Clinic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="511" y="303" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[DELTOID;]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="464" y="303" width="47" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deltoid2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="126" y="305" width="340" height="20"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[2nd DOSE: TETANUS TOXOID VACCINE; 0.5 ml, INTRAMUSCULAR @]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="126" y="321" width="132" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="99" y="308" width="19" height="19"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tetanus2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="258" y="362" width="227" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[: SPMC - Health Service and Specialty Clinic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="510" y="343" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[DELTOID;]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="463" y="343" width="47" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deltoid3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="126" y="345" width="340" height="20"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[3rd DOSE: TETANUS TOXOID VACCINE; 0.5 ml, INTRAMUSCULAR @]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="126" y="361" width="132" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="99" y="348" width="19" height="19"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tetanus3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="69" y="403" width="113" height="14"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[HEPATITIS B VACCINE:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="97" y="428" width="19" height="19"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hepatitis1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="124" y="428" width="300" height="20"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[1st DOSE: HEPATITIS B VACCINE; 1 ml, INTRAMUSCULAR @]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="426" y="427" width="47" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deltoid4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="473" y="427" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[DELTOID;]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="124" y="445" width="129" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="253" y="445" width="232" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[: SPMC - Health Service and Specialty Clinic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="253" y="485" width="232" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[: SPMC - Health Service and Specialty Clinic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="471" y="467" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[DELTOID;]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="424" y="467" width="47" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deltoid5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="124" y="468" width="301" height="20"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[2nd DOSE: HEPATITIS B VACCINE; 1 ml, INTRAMUSCULAR @]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="124" y="485" width="129" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="97" y="472" width="19" height="19"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hepatitis2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="253" y="525" width="232" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[: SPMC - Health Service and Specialty Clinic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="471" y="507" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[DELTOID;]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="424" y="507" width="47" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deltoid6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="125" y="508" width="300" height="20"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[3rd DOSE: HEPATITIS B VACCINE; 1 ml, INTRAMUSCULAR @]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="124" y="525" width="129" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="512" width="19" height="19"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hepatitis3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="18" y="560" width="536" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[This certificate is issued upon the request of the above mentioned for whatever purpose it may serve.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="18" y="613" width="180" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{signatory1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="18" y="633" width="242" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" markup="none">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{license1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="18" y="647" width="180" height="15"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jobtitle1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="258" y="667" width="58" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[NOTED BY:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="316" y="687" width="195" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{signatory2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="707" width="194" height="15"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jobtitle2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="721" width="194" height="15"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{license2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="25" y="689" width="74" height="18"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Not Valid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="701" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Without SPMC Seal]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="76" y="194" width="325" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{address_short}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

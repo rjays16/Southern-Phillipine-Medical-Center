@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="seg_ihomp_service_request_form" language="groovy" pageWidth="612" pageHeight="936" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.4641000000000008"/>
+	<property name="ireport.x" value="137"/>
+	<property name="ireport.y" value="401"/>
+	<title>
+		<band height="78">
+			<staticText>
+				<reportElement x="0" y="19" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Southern Philippines Medical Center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="38" width="384" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INTEGRATED HOSPITAL OPERATIONS AND MANAGEMENT PROGRAM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="57" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[ICT and Technical Assistance Request Form]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="457" y="38" width="97" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( IHOMP )]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="818">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Date: _________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="19" width="555" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Department/Section: ____________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="38" width="555" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Nature of Work (Please Check):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="59" width="132" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( ) Computer and Peripherals]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="95" width="555" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[JOB DESCRIPTION:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="78" width="132" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( ) Applications/Software]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="59" width="132" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( ) Printer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="423" y="57" width="132" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( ) Network Support]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="284" y="57" width="132" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( ) VOIP Phone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="78" width="132" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( ) Anti-Virus]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="284" y="76" width="132" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( ) Set-up]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="423" y="76" width="132" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( ) Others ______________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="114" width="555" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[__________________________________________________________________________________________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="133" width="555" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[__________________________________________________________________________________________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="154" width="284" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Requested by:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="152" width="272" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Received by:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="173" width="284" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[             _________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="171" width="272" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[             _________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="192" width="284" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[                          (Print Name & Signature)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="190" width="272" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[                          (Print Name & Signature)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="210" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="0" y="211" width="140" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Time Started: ____________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="230" width="140" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Time Finished: ___________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="211" width="140" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Service By:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="230" width="140" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[_______________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="352" y="211" width="203" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Remarks: _______________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="352" y="230" width="203" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[_________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="352" y="249" width="203" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[_________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="352" y="268" width="203" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[_________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="268" width="140" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[_________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="287" width="140" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Client's Signature]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="310" width="140" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[SPMC-F-IHOM-04]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="415" y="310" width="117" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Rev. 0]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="310" width="158" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Effectivity: October 1, 2013]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="414" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Southern Philippines Medical Center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="490" width="555" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Department/Section: ____________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="471" width="555" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Date: _________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="509" width="555" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Nature of Work (Please Check):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="528" width="132" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( ) VOIP Phone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="547" width="132" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( ) Set-up]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="423" y="547" width="132" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( ) Others ______________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="528" width="132" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( ) Computer and Peripherals]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="139" y="547" width="132" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( ) Anti-Virus]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="547" width="132" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( ) Applications/Software]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="139" y="528" width="132" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( ) Printer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="423" y="528" width="132" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( ) Network Support]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="566" width="555" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[JOB DESCRIPTION:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="661" width="273" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[                          (Print Name & Signature)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="623" width="273" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Received by:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="623" width="284" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Requested by:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="642" width="273" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[             _________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="604" width="555" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[__________________________________________________________________________________________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="661" width="284" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[                          (Print Name & Signature)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="642" width="284" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[             _________________________________________]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="680" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="180" y="683" width="140" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Service By:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="683" width="140" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Time Started: ____________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="702" width="140" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Time Finished: ___________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="702" width="140" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[_______________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="351" y="702" width="203" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[_________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="351" y="683" width="203" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Remarks: _______________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="351" y="721" width="203" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[_________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="740" width="140" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[_______________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="351" y="740" width="203" height="21"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[_________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="778" width="158" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Effectivity: October 1, 2013]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="778" width="140" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[SPMC-F-IHOM-04]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="415" y="778" width="117" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Rev. 0]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="759" width="140" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[Client's Signature]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="433" width="384" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INTEGRATED HOSPITAL OPERATIONS AND MANAGEMENT PROGRAM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="452" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[ICT and Technical Assistance Request Form]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="457" y="433" width="97" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[( IHOMP )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="585" width="555" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[__________________________________________________________________________________________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-16" y="366" width="606" height="20"/>
+				<textElement/>
+				<text><![CDATA[--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+</jasperReport>

@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DeathCertificate" language="groovy" pageWidth="612" pageHeight="1008" whenNoDataType="AllSectionsNoDetail" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="1.100000000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="624"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="registry_nr" class="java.lang.String"/>
+	<field name="birth_type" class="java.lang.String"/>
+	<field name="birth_rank" class="java.lang.String"/>
+	<field name="corpse_disposal" class="java.lang.String"/>
+	<field name="mother_name" class="java.lang.String"/>
+	<field name="embalmer_title" class="java.lang.String"/>
+	<field name="late_affiant_ack_place" class="java.lang.String"/>
+	<field name="late_affiant_ack_year" class="java.lang.String"/>
+	<field name="postmortem_address1" class="java.lang.String"/>
+	<field name="embalmer_address1" class="java.lang.String"/>
+	<field name="late_affiant_ack_sign" class="java.lang.String"/>
+	<field name="father_name" class="java.lang.String"/>
+	<field name="late_affiant_comtax_place" class="java.lang.String"/>
+	<field name="subscribed_sworn_month" class="java.lang.String"/>
+	<field name="subscribed_sworn_place" class="java.lang.String"/>
+	<field name="late_officer_sign" class="java.lang.String"/>
+	<field name="late_cemetery" class="java.lang.String"/>
+	<field name="embalmer_address2" class="java.lang.String"/>
+	<field name="cause1" class="java.lang.String"/>
+	<field name="cause2" class="java.lang.String"/>
+	<field name="cause3" class="java.lang.String"/>
+	<field name="cause4" class="java.lang.String"/>
+	<field name="cause5" class="java.lang.String"/>
+	<field name="postmortem_address2" class="java.lang.String"/>
+	<field name="informant_sign" class="java.lang.String"/>
+	<field name="informant_name" class="java.lang.String"/>
+	<field name="informant_name_short" class="java.lang.String"/>
+	<field name="informant_relation" class="java.lang.String"/>
+	<field name="informant_address" class="java.lang.String"/>
+	<field name="informant_date_sign" class="java.lang.String"/>
+	<field name="late_affiant_name" class="java.lang.String"/>
+	<field name="late_attended2" class="java.lang.String"/>
+	<field name="late_attended1" class="java.lang.String"/>
+	<field name="late_reason1" class="java.lang.String"/>
+	<field name="late_officer_title" class="java.lang.String"/>
+	<field name="late_officer_name" class="java.lang.String"/>
+	<field name="late_officer_address" class="java.lang.String"/>
+	<field name="name_first" class="java.lang.String"/>
+	<field name="name_middle" class="java.lang.String"/>
+	<field name="name_last" class="java.lang.String"/>
+	<field name="sex" class="java.lang.String"/>
+	<field name="birthDay" class="java.lang.String"/>
+	<field name="birthMonth" class="java.lang.String"/>
+	<field name="birthYear" class="java.lang.String"/>
+	<field name="death_place_basic" class="java.lang.String"/>
+	<field name="late_place_death" class="java.lang.String"/>
+	<field name="death_place_mun" class="java.lang.String"/>
+	<field name="late_affiant_address2" class="java.lang.String"/>
+	<field name="late_dead_name" class="java.lang.String"/>
+	<field name="late_reason2" class="java.lang.String"/>
+	<field name="embalmer_license_no" class="java.lang.String"/>
+	<field name="late_affiant_address1" class="java.lang.String"/>
+	<field name="embalmer_sign" class="java.lang.String"/>
+	<field name="late_affiant_ack_month" class="java.lang.String"/>
+	<field name="late_affiant_ack_day" class="java.lang.String"/>
+	<field name="date_birth" class="java.lang.String"/>
+	<field name="postmortem_name" class="java.lang.String"/>
+	<field name="postmortem_cause1" class="java.lang.String"/>
+	<field name="postmortem_cause2" class="java.lang.String"/>
+	<field name="embalmer_issued_place" class="java.lang.String"/>
+	<field name="embalmer_expiry_date" class="java.lang.String"/>
+	<field name="postmortem_sign" class="java.lang.String"/>
+	<field name="late_ddate" class="java.lang.String"/>
+	<field name="late_attendedby" class="java.lang.String"/>
+	<field name="postmortem_title" class="java.lang.String"/>
+	<field name="age_of_mother" class="java.lang.String"/>
+	<field name="pregnancy_length" class="java.lang.String"/>
+	<field name="delivery_method" class="java.lang.String"/>
+	<field name="embalmer_dead_name" class="java.lang.String"/>
+	<field name="subscribed_sworn_year" class="java.lang.String"/>
+	<field name="late_affiant_comtax_nr" class="java.lang.String"/>
+	<field name="late_death_cause" class="java.lang.String"/>
+	<field name="embalmer_name" class="java.lang.String"/>
+	<field name="late_buried_date" class="java.lang.String"/>
+	<field name="postmortem_date" class="java.lang.Object"/>
+	<field name="subscribed_sworn_day" class="java.lang.String"/>
+	<field name="embalmer_issued_on" class="java.lang.Object"/>
+	<field name="death_place_prov" class="java.lang.String"/>
+	<field name="late_affiant_comtax_date" class="java.lang.String"/>
+	<field name="deathDay" class="java.lang.String"/>
+	<field name="deathMonth" class="java.lang.String"/>
+	<field name="deathYear" class="java.lang.String"/>
+	<field name="age_at_death" class="java.lang.String"/>
+	<field name="age_month" class="java.lang.String"/>
+	<field name="age_days" class="java.lang.String"/>
+	<field name="age_hours" class="java.lang.String"/>
+	<field name="age_min_sec" class="java.lang.String"/>
+	<field name="civil_status" class="java.lang.String"/>
+	<field name="religion" class="java.lang.String"/>
+	<field name="cause_death_a" class="java.lang.String"/>
+	<field name="cause_death_b" class="java.lang.String"/>
+	<field name="cause_death_c" class="java.lang.String"/>
+	<field name="maternalcondition_a" class="java.lang.String"/>
+	<field name="maternalcondition_b" class="java.lang.String"/>
+	<field name="maternalcondition_c" class="java.lang.String"/>
+	<field name="maternalcondition_d" class="java.lang.String"/>
+	<field name="maternalcondition_e" class="java.lang.String"/>
+	<field name="death_external_cause" class="java.lang.String"/>
+	<field name="death_external_cause_place" class="java.lang.String"/>
+	<field name="death_autopsy" class="java.lang.String"/>
+	<field name="attendant_e" class="java.lang.String"/>
+	<field name="attendant_b" class="java.lang.String"/>
+	<field name="attendant_c" class="java.lang.String"/>
+	<field name="attendant_d" class="java.lang.String"/>
+	<field name="attendant_a" class="java.lang.String"/>
+	<field name="attended_from" class="java.lang.String"/>
+	<field name="attended_to" class="java.lang.String"/>
+	<field name="deathcert_have" class="java.lang.String"/>
+	<field name="deathcert_havenot" class="java.lang.String"/>
+	<field name="deathcert_time" class="java.lang.String"/>
+	<field name="receivedby_name" class="java.lang.String"/>
+	<field name="certification_name" class="java.lang.String"/>
+	<field name="certification_position" class="java.lang.String"/>
+	<field name="certification_address" class="java.lang.String"/>
+	<field name="certification_date" class="java.lang.String"/>
+	<field name="reviewed_name" class="java.lang.String"/>
+	<field name="reviewed_date" class="java.lang.String"/>
+	<field name="transfer_number" class="java.lang.String"/>
+	<field name="burial_number" class="java.lang.String"/>
+	<field name="burial_date_issued" class="java.lang.String"/>
+	<field name="transfer_date" class="java.lang.String"/>
+	<field name="receivedby_sign" class="java.lang.String"/>
+	<field name="receivedby_position" class="java.lang.String"/>
+	<field name="receivedby_date_sign" class="java.lang.String"/>
+	<field name="remarks_annotation" class="java.lang.String"/>
+	<field name="registered_sign" class="java.lang.String"/>
+	<field name="registered_position" class="java.lang.String"/>
+	<field name="registered_date" class="java.lang.String"/>
+	<field name="citizenship" class="java.lang.String"/>
+	<field name="preparedby_sign" class="java.lang.String"/>
+	<field name="preparedby_name" class="java.lang.String"/>
+	<field name="preparedby_position" class="java.lang.String"/>
+	<field name="preparedby_date_sign" class="java.lang.String"/>
+	<field name="occupation" class="java.lang.String"/>
+	<field name="certification_sign" class="java.lang.String"/>
+	<field name="interval_death_a" class="java.lang.String"/>
+	<field name="interval_death_b" class="java.lang.String"/>
+	<field name="interval_death_c" class="java.lang.String"/>
+	<field name="residence_place" class="java.lang.String"/>
+	<field name="name_address_cementery" class="java.lang.String"/>
+	<field name="registered_name" class="java.lang.String"/>
+	<field name="attendant_type_others" class="java.lang.String"/>
+	<field name="certification_address1" class="java.lang.String"/>
+	<field name="certification_name1" class="java.lang.String"/>
+	<field name="informant_name_shorter" class="java.lang.String"/>
+	<pageHeader>
+		<band height="988">
+			<textField isBlankWhenNull="true">
+				<reportElement x="121" y="66" width="287" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{death_place_prov}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="154" y="83" width="254" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{death_place_mun}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="414" y="82" width="189" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registry_nr}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="54" y="124" width="130" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="11"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name_first}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="189" y="124" width="127" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="11"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name_middle}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="321" y="124" width="129" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="11"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name_last}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="474" y="124" width="127" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sex}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="213" y="172" width="23" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{birthDay}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="239" y="172" width="70" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{birthMonth}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="314" y="172" width="46" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{birthYear}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="62" y="206" width="376" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{death_place_basic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="61" y="242" width="127" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{religion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="206" y="242" width="124" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{citizenship}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="193" y="334" width="224" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cause_death_a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="193" y="355" width="224" height="15"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cause_death_b}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="193" y="372" width="224" height="15"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cause_death_c}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="54" y="272" width="113" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{occupation}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="428" y="334" width="169" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{interval_death_a}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="339" y="235" width="258" height="27"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Justified" verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{residence_place}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="53" y="402" width="20" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{maternalcondition_a}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="152" y="403" width="20" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{maternalcondition_b}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="247" y="403" width="20" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="9" pdfEncoding="Cp1252"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{maternalcondition_c}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="382" y="403" width="20" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{maternalcondition_d}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="507" y="400" width="20" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{maternalcondition_e}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="341" y="450" width="152" height="18"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{death_external_cause_place}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="304" y="435" width="163" height="17"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{death_external_cause}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="555" y="445" width="48" height="30"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{death_autopsy}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="41" y="488" width="28" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendant_a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="118" y="488" width="28" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendant_b}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="183" y="488" width="28" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendant_c}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="259" y="487" width="28" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendant_d}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="320" y="488" width="28" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendant_e}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="458" y="489" width="66" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attended_from}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="290" y="527" width="59" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{deathcert_time}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="531" y="489" width="63" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attended_to}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="49" y="528" width="20" height="16"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{deathcert_havenot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="513" y="522" width="16" height="16"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{deathcert_have}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="122" y="560" width="238" height="18"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{certification_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="123" y="574" width="237" height="19"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{certification_position}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="98" y="587" width="292" height="19"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{certification_address}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="121" y="731" width="194" height="15"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{informant_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="238" y="601" width="116" height="16"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{certification_date}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="67" y="649" width="154" height="24"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{corpse_disposal}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="282" y="659" width="146" height="17"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{burial_date_issued}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="455" y="642" width="129" height="17"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transfer_number}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="391" y="567" width="198" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{reviewed_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="400" y="594" width="181" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{reviewed_date}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="259" y="642" width="164" height="17"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{burial_number}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="115" y="543" width="253" height="15"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10" isItalic="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{certification_sign}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="68" y="687" width="539" height="14"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name_address_cementery}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="109" y="719" width="217" height="15"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{informant_sign}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="471" y="660" width="110" height="15"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transfer_date}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="66" y="172" width="24" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{deathDay}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="95" y="172" width="59" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{deathMonth}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="158" y="172" width="44" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{deathYear}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="377" y="174" width="61" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{age_at_death}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="460" y="174" width="30" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{age_month}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="500" y="174" width="30" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{age_days}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="535" y="174" width="25" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{age_hours}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="564" y="174" width="43" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{age_min_sec}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="455" y="207" width="143" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Tahoma"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{civil_status}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="428" y="355" width="169" height="15"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{interval_death_b}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="428" y="372" width="169" height="15"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{interval_death_c}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="164" y="745" width="166" height="18"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{informant_relation}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="92" y="763" width="272" height="16"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{informant_address}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="108" y="781" width="218" height="15"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{informant_date_sign}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="373" y="711" width="217" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{preparedby_sign}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="402" y="729" width="188" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{preparedby_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="410" y="748" width="180" height="18"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{preparedby_position}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="373" y="763" width="217" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{preparedby_date_sign}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="95" y="814" width="214" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{receivedby_sign}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="90" y="871" width="217" height="17"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{receivedby_date_sign}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="118" y="836" width="190" height="17"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{receivedby_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="118" y="854" width="190" height="16"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{receivedby_position}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="385" y="815" width="203" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registered_sign}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="404" y="854" width="182" height="18"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registered_position}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="369" y="874" width="219" height="15"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registered_date}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="399" y="835" width="188" height="18"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registered_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="61" y="913" width="536" height="27"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{remarks_annotation}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="379" y="487" width="59" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0">
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendant_type_others}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="77" y="605" width="140" height="16"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{certification_address1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="177" y="274" width="197" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{father_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="400" y="274" width="197" height="20"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mother_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="121" y="567" width="239" height="11"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{certification_name1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="121" y="734" width="195" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{informant_name_short}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="123" y="734" width="195" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{informant_name_shorter}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+</jasperReport>

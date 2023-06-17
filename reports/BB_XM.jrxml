@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BB_Compatibility_Report" language="groovy" pageWidth="612" pageHeight="938" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="10" bottomMargin="10">
+	<property name="ireport.zoom" value="1.464100000000023"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="34"/>
+	<parameter name="from_date" class="java.lang.String"/>
+	<parameter name="header" class="java.lang.String"/>
+	<parameter name="hospital_name" class="java.lang.String"/>
+	<parameter name="department" class="java.lang.String"/>
+	<parameter name="to_date" class="java.lang.String"/>
+	<parameter name="hosp_country" class="java.lang.String"/>
+	<parameter name="hosp_agency" class="java.lang.String"/>
+	<parameter name="hosp_name" class="java.lang.String"/>
+	<parameter name="hosp_addr1" class="java.lang.String"/>
+	<parameter name="image_01" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="image_02" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="prep_1" class="java.lang.String"/>
+	<parameter name="prep_2" class="java.lang.String"/>
+	<parameter name="not_1" class="java.lang.String"/>
+	<parameter name="not_2" class="java.lang.String"/>
+	<parameter name="compa_header" class="java.lang.String"/>
+	<parameter name="patient" class="java.lang.String"/>
+	<parameter name="hrn" class="java.lang.String"/>
+	<parameter name="physician" class="java.lang.String"/>
+	<parameter name="source" class="java.lang.String"/>
+	<parameter name="diagnosis" class="java.lang.String"/>
+	<parameter name="date_birth" class="java.lang.String"/>
+	<parameter name="age" class="java.lang.String"/>
+	<parameter name="gender" class="java.lang.String"/>
+	<parameter name="ward" class="java.lang.String"/>
+	<parameter name="surname" class="java.lang.String"/>
+	<parameter name="blood" class="java.lang.String"/>
+	<parameter name="qtys" class="java.lang.String"/>
+	<parameter name="units" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="fn" class="java.lang.String"/>
+	<parameter name="type_request" class="java.lang.String"/>
+	<parameter name="recieved" class="java.lang.String"/>
+	<parameter name="rtime" class="java.lang.String"/>
+	<parameter name="rmeridian" class="java.lang.String"/>
+	<parameter name="started" class="java.lang.String"/>
+	<parameter name="stime" class="java.lang.String"/>
+	<parameter name="smeridian" class="java.lang.String"/>
+	<parameter name="done" class="java.lang.String"/>
+	<parameter name="dtime" class="java.lang.String"/>
+	<parameter name="dmeridian" class="java.lang.String"/>
+	<parameter name="compa" class="java.lang.Number"/>
+	<parameter name="notcompa" class="java.lang.Number"/>
+	<parameter name="re_typ" class="java.lang.Number"/>
+	<parameter name="serial" class="java.lang.String"/>
+	<parameter name="mn" class="java.lang.String"/>
+	<parameter name="hosp_header" class="java.lang.String"/>
+	<parameter name="footer" class="java.lang.String"/>
+	<parameter name="call4505" class="java.lang.String"/>
+	<parameter name="forPHLEBO" class="java.lang.String"/>
+	<parameter name="requestXM" class="java.lang.String"/>
+	<parameter name="pediaSelect" class="java.lang.String"/>
+	<parameter name="DPL" class="java.lang.String"/>
+	<parameter name="BTS" class="java.lang.String"/>
+	<parameter name="hosp_localadd" class="java.lang.String"/>
+	<parameter name="CHD" class="java.lang.String"/>
+	<parameter name="room_nr" class="java.lang.String"/>
+	<parameter name="img_doh" class="java.lang.String"/>
+	<parameter name="img_spmc" class="java.lang.String"/>
+	<parameter name="blood_group" class="java.lang.String"/>
+	<parameter name="when" class="java.lang.String"/>
+	<field name="patient_name" class="java.lang.String"/>
+	<field name="date_admission" class="java.lang.String"/>
+	<field name="date_death" class="java.lang.String"/>
+	<field name="ward" class="java.lang.String"/>
+	<field name="reason" class="java.lang.String"/>
+	<field name="noted_name" class="java.lang.String"/>
+	<field name="noted_pos" class="java.lang.String"/>
+	<field name="image_01" class="java.lang.String"/>
+	<field name="image_02" class="java.lang.String"/>
+	<field name="nob" class="java.lang.String"/>
+	<field name="dob" class="java.lang.String"/>
+	<field name="mn" class="java.lang.String"/>
+	<field name="fn" class="java.lang.String"/>
+	<field name="image_03" class="java.lang.String"/>
+	<field name="image_04" class="java.lang.String"/>
+	<field name="image_05" class="java.lang.String"/>
+	<field name="Surname" class="java.lang.String"/>
+	<field name="fname" class="java.lang.String"/>
+	<field name="bdate" class="java.lang.String"/>
+	<field name="hrn" class="java.lang.String"/>
+	<field name="physician" class="java.lang.String"/>
+	<field name="rn" class="java.lang.String"/>
+	<field name="age_sex" class="java.lang.String"/>
+	<field name="b_type" class="java.lang.String"/>
+	<field name="diag" class="java.lang.String"/>
+	<title>
+		<band height="369" splitType="Stretch">
+			<textField>
+				<reportElement x="1" y="16" width="572" height="13"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hosp_country}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="55" width="572" height="13"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hosp_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="30" width="572" height="12"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hosp_agency}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="441" y="-194" width="190" height="77"/>
+				<imageExpression><![CDATA[$F{image_01}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="71" y="-175" width="159" height="58"/>
+				<imageExpression><![CDATA[$F{image_02}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="427" y="88" width="127" height="107"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="-1" y="206" width="453" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[NOTE: ACCOMPLISH LEGIBLY AND CORRECTLY. TAMPERED & INCOMPLETE DATA WILL BE ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="433" y="94" width="121" height="26"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[SERVED: ________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="114" width="129" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Blood Group: ____________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="433" y="129" width="126" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[No. of Units:  ____________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="146" width="127" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Bld. Product:  ____________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="161" width="130" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Date  & Time:____________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="175" width="127" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Issued by:     ____________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="447" y="206" width="70" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" isBold="true" isUnderline="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[REJECTED.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="224" width="168" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" isItalic="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Request Form Accomplished by:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="156" y="234" width="208" height="1"/>
+			</line>
+			<line>
+				<reportElement x="386" y="234" width="135" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="190" y="237" width="141" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Signature Over Printed Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="409" y="237" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Designation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-2" y="261" width="100" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Name of Patient:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="74" y="270" width="254" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="90" y="270" width="45" height="11"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Surname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="270" width="45" height="11"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[First Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="295" y="271" width="31" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="7" isItalic="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[MI ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="262" width="100" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Date of Birth:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="387" y="270" width="83" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="471" y="262" width="27" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[HRN:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="494" y="270" width="75" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="-3" y="286" width="55" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Physician:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="37" y="294" width="131" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="167" y="287" width="44" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Ward:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="189" y="294" width="125" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="314" y="286" width="39" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Rm. No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="384" y="285" width="41" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Age/Sex:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="345" y="293" width="38" height="1"/>
+			</line>
+			<line>
+				<reportElement x="541" y="293" width="31" height="1"/>
+			</line>
+			<line>
+				<reportElement x="418" y="293" width="76" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="494" y="285" width="52" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Blood Type:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-2" y="310" width="88" height="16"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Clinical Diagnosis:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="71" y="318" width="242" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="313" y="310" width="100" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Blood Needed on Date:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="407" y="318" width="55" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="461" y="311" width="35" height="15"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Time:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="484" y="318" width="55" height="1"/>
+			</line>
+			<line>
+				<reportElement x="156" y="343" width="55" height="1"/>
+			</line>
+			<line>
+				<reportElement x="239" y="343" width="87" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="536" y="305" width="36" height="22"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[am/pm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="336" width="133" height="26"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[History of Previous Transfusion:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="122" y="336" width="38" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Where]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="214" y="336" width="39" height="16"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[When]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="336" width="194" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Type of Request: (   )Routine  (   ) STAT]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="63" width="572" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hosp_localadd}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="53" y="91" width="465" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DPL}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="22" y="102" width="525" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{BTS}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="159" y="130" width="250" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="11" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{requestXM}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="158" y="145" width="253" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="11" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pediaSelect}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="4" y="141" width="123" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{call4505}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="4" y="155" width="122" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{forPHLEBO}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="40" width="570" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CHD}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="418" y="279" width="76" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="6"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{age}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="494" y="255" width="74" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hrn}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="387" y="255" width="83" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_birth}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="76" y="243" width="104" height="27"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{surname}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="243" width="111" height="27"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fn}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="291" y="255" width="38" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mn}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="36" y="280" width="133" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{physician}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="346" y="279" width="37" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{room_nr}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="536" y="278" width="41" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{blood}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="189" y="280" width="125" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ward}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="72" y="307" width="241" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{diagnosis}]]></textFieldExpression>
+			</textField>
+			<image isLazy="true">
+				<reportElement x="439" y="13" width="67" height="61"/>
+				<imageExpression><![CDATA[$P{img_spmc}]]></imageExpression>
+			</image>
+			<image isLazy="true">
+				<reportElement x="59" y="16" width="67" height="61"/>
+				<imageExpression><![CDATA[$P{img_doh}]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="485" y="108" width="52" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{blood_group}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="239" y="330" width="87" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{when}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

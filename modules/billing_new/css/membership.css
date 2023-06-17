@@ -1,0 +1,36 @@
+table tr:first-child th:last-child{
+    text-align: center !important;
+    padding-top: 3px !important;
+}
+
+#dependents tr:hover {
+    background-color: #f0f0f0;
+}
+
+#dependents tr td {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#dependents tr td * {
+    margin: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 30px;
+    border-radius: 0;
+    border: none;
+    background-color: inherit;
+}
+
+.cell-button {
+    text-align: center !important;
+}
+
+.cell-button a {
+    position: relative;
+    top: 4px;
+}

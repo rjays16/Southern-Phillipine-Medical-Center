@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Patient Information</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body> 	
+        <div id="mario-chat">
+			<h2>Search Patient Via Fingerprint</h2>
+			<form action="launch.php" method="get">
+            <button type="submit" value="Register" name="Register">Search</button>
+			<div id="fingerprint-window">
+                <div id="fingerprint"></div>
+				<div id="clientid"></div>
+				<label>Patient Id: </label>
+				<input type=text name="ptntId" id="ptnt" value=""  maxlength=16
+				<br/>
+            </div>		
+			</form>
+				
+        </div>
+    </body>
+	<script>
+	    // generate random ptntID as client socket identifier
+		function randomNumber(len) {
+			var randomNumber;
+			var n = '';
+			for(var count = 0; count < len; count++) {
+				randomNumber = Math.floor(Math.random() * 10);
+				n += randomNumber.toString();
+			}
+			return n;
+		}
+		document.getElementById("ptnt").value = randomNumber(10);
+	</script>
+    <script src="chat.js"></script>
+</html>

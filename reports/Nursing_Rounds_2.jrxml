@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Nursing_Rounds_2" language="groovy" pageWidth="612" pageHeight="936" whenNoDataType="AllSectionsNoDetail" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f4314d45-fd42-4fe9-88eb-5689bc821d30">
+	<property name="ireport.zoom" value="1.6105100000000259"/>
+	<property name="ireport.x" value="388"/>
+	<property name="ireport.y" value="226"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+		<paragraph lineSpacing="Single"/>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<paragraph lineSpacing="Single"/>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<paragraph lineSpacing="Single"/>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<paragraph lineSpacing="Single"/>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="6d67202e-ff1a-4c9e-b86c-14c26b5ac998"/>
+	<parameter name="ward_name" class="java.lang.String"/>
+	<parameter name="date_today" class="java.lang.String"/>
+	<parameter name="shift" class="java.lang.String"/>
+	<parameter name="nod_here" class="java.lang.String"/>
+	<parameter name="room_text" class="java.lang.String"/>
+	<parameter name="r_doh" class="java.lang.String"/>
+	<parameter name="r_spmc" class="java.lang.String"/>
+	<field name="room_name" class="java.lang.String"/>
+	<field name="bed_number" class="java.lang.String"/>
+	<field name="hrn" class="java.lang.String"/>
+	<field name="patient_name" class="java.lang.String"/>
+	<field name="impression_diagnosis" class="java.lang.String"/>
+	<field name="diet" class="java.lang.String"/>
+	<field name="IVF" class="java.lang.String"/>
+	<field name="available_meds" class="java.lang.String"/>
+	<field name="other_gadgets" class="java.lang.String"/>
+	<field name="problem_meds_msg_others" class="java.lang.String"/>
+	<field name="actions" class="java.lang.String"/>
+	<field name="sex" class="java.lang.String"/>
+	<field name="age" class="java.lang.String"/>
+	<field name="room_number" class="java.lang.String"/>
+	<field name="room_text1" class="java.lang.String"/>
+	<field name="discharge_list_label" class="java.lang.String"/>
+	<group name="RoomName" isReprintHeaderOnEachPage="true">
+		<groupExpression><![CDATA[$F{room_number}]]></groupExpression>
+		<groupHeader>
+			<band height="20" splitType="Prevent">
+				<rectangle>
+					<reportElement style="table_TH" x="1" y="0" width="571" height="20" uuid="97e9016a-79e8-40ed-a79c-218869f7ef0d"/>
+				</rectangle>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Transparent" x="70" y="1" width="462" height="19" uuid="be79abd2-4cb3-48cc-824a-3f62bedcb953"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="DejaVu Sans"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{room_name}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="26" y="1" width="40" height="19" forecolor="#000000" backcolor="#F0F8FF" uuid="ed840457-c22a-48a6-a9c2-a30a8eb79f61"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{room_number}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="1" y="0" width="100" height="20" uuid="3cba54f1-a1c2-475f-8e9b-6f3f887ff4c3"/>
+					<textElement verticalAlignment="Middle">
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{room_text1}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="2" y="0" width="279" height="20" uuid="f5cc7988-8525-4697-b1bd-7d9f4c76937d"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="DejaVu Sans"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{discharge_list_label}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="146" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="125" width="33" height="20" uuid="4abe7608-3b1e-4269-adc5-1e30cbd1ba8a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Ward:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="124" width="31" height="20" uuid="f662f138-d0ce-4cde-aa00-42d94243c42c"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="324" y="124" width="29" height="20" uuid="ccfbd647-766e-40f0-a950-bf852a1fb319"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Shift:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="446" y="124" width="35" height="20" uuid="2aa503ed-efb2-4871-88d0-3ec75ec820ab"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Nod/s: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="RelativeToBandHeight" x="33" y="125" width="536" height="20" uuid="361fc197-8998-4787-b6b7-ac91e8bd6823"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ward_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="124" width="100" height="20" uuid="e4664bc9-5029-496c-b514-2c97791f1a1a"/>
+				<textElement verticalAlignment="Middle">
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_today}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="124" width="128" height="20" uuid="ac4fbd7a-5e05-4a5a-89d1-9c9a4b52c1ca"/>
+				<textElement verticalAlignment="Middle">
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{shift}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="481" y="124" width="90" height="20" uuid="830350fb-7abb-4de7-92f9-8638caac788a"/>
+				<textElement verticalAlignment="Middle">
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nod_here}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="92" width="569" height="18" uuid="972b9545-e187-47f2-882b-e64f07054b51"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[NURSING ROUNDS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="71" y="21" width="51" height="51" uuid="4ac6fadf-66e2-4623-8c83-3188922d4a32"/>
+				<imageExpression><![CDATA[$P{r_doh}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="2" y="8" width="569" height="13" uuid="d7e1ec8d-2468-4b63-8f67-1c462fd642b2"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Republic of the Philippines]]></text>
+			</staticText>
+			<image>
+				<reportElement x="448" y="2" width="75" height="70" uuid="2ec6c705-0dd9-4358-9ef8-ee46d648a4ff"/>
+				<imageExpression><![CDATA[$P{r_spmc}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="1" y="21" width="569" height="13" uuid="7c4157c2-7a58-4486-97a1-8d362f523fdb"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Department of Health]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="34" width="569" height="13" uuid="0b61d1aa-f9fa-47e6-b514-b87eb7884d49"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Center for Health Development - Davao Region]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="43" width="569" height="19" uuid="94832c12-46e5-451e-8fd3-d9ea3e5b9f7a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[SOUTHERN PHILIPPINES MEDICAL CENTER ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="60" width="569" height="13" uuid="8ac1bbef-4cbf-4c7a-8f89-789046c7b2ff"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[J.P. Laurel Avenue, Davao City]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="73" width="569" height="13" uuid="487c88fa-b681-4738-a1e6-6fdbae0cd6ac"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Trunkline:(082) 227-2731  Faxline: (082) 221-7029]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="0" width="25" height="39" uuid="0c02e2d1-d731-4ed5-b1c7-fb3f78414637"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="26" y="0" width="44" height="39" uuid="4b024c24-55e5-4b04-b64b-aa4870e57921"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="70" y="0" width="68" height="39" uuid="44fb468b-4bce-470c-b04e-71a264fca814"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="247" y="0" width="57" height="39" uuid="117ba937-0b78-4136-afb3-de02ff736ea6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="304" y="0" width="49" height="39" uuid="939598be-2d1b-42ba-815c-bcfa273dd26d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="353" y="0" width="52" height="39" uuid="1ad9fafe-2f28-4a97-a30e-5565409e6c26"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="405" y="0" width="56" height="39" uuid="66e52195-1fbb-4648-b1b4-0275f49dc517"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="461" y="0" width="61" height="39" uuid="20f11395-4365-417f-b875-ac929b117bfa"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="522" y="0" width="50" height="39" uuid="13a3f6b5-80c6-4f1d-87be-ca7ee6204171"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="26" y="0" width="43" height="39" uuid="daf81b78-f273-4928-9c92-c78e0ae01879"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[HRN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="2" width="48" height="34" uuid="a1625ac1-c862-46d5-8d7c-ec988aa7a974"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[IVF/Level/Due/Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="353" y="0" width="52" height="39" uuid="fd0d1212-a2d2-440f-bb92-471ea3de2f72"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Available Meds]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="408" y="-1" width="50" height="39" uuid="dc66b67c-8326-494d-9746-95278189753c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Other Gadgets Incl. Blood(Bag#, S#, Type)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="522" y="0" width="50" height="39" uuid="0dd3ea9a-5f91-4b60-b88c-e68677140847"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Actions]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="138" y="0" width="109" height="39" uuid="d3b19195-dc25-4ee4-9b39-c2766126bf7d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="2" y="0" width="25" height="39" uuid="d7b657a0-1147-4918-b6d8-d49805ed04ca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Bed #]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="6" width="92" height="28" uuid="c887bb57-32f9-4fe9-b169-f0740dfb3c56"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Impression/Diagnosis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="247" y="0" width="58" height="39" uuid="3a7862e8-ad41-47d2-8c9a-7daecfd8dcab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Diet]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="466" y="6" width="49" height="28" uuid="0ea7470e-2fcf-4a1a-8a00-0ab9e1171b02"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Problems/Meds/Msg/ Others]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="0" width="50" height="39" uuid="b60024fd-7f9c-4026-b0b3-9360940d79ac"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Name of Patient]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="27" y="0" width="43" height="40" uuid="8eaf13a6-fccd-4982-a381-71c0c594de7e"/>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="1" y="0" width="26" height="40" isPrintWhenDetailOverflows="true" uuid="0c91c1df-3a8f-4f44-888d-d8701a00087b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bed_number}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="405" y="0" width="56" height="40" isPrintWhenDetailOverflows="true" uuid="b98c6078-ea7e-4e18-a638-8ddfda16d046"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{other_gadgets}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="353" y="0" width="52" height="40" isPrintWhenDetailOverflows="true" uuid="90a6e08c-09be-4d17-be08-af094f7b7229"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{available_meds}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="70" y="0" width="68" height="40" isPrintWhenDetailOverflows="true" uuid="297bd66e-ccf3-4260-bdac-1e14e8b467f8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{patient_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="57" y="19" width="18" height="20" isPrintWhenDetailOverflows="true" uuid="57d509cd-bdaa-443f-a871-c8b0640a1936"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sex}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="138" y="0" width="109" height="40" isPrintWhenDetailOverflows="true" uuid="dffe3b7e-fac4-43de-92d4-aabf2c05bcc2"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="DejaVu Sans" size="7"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impression_diagnosis}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="247" y="0" width="57" height="40" isPrintWhenDetailOverflows="true" uuid="83a5eb6c-5b03-46b2-b4a4-65408fa92184"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="DejaVu Sans" size="7"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diet}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="304" y="0" width="49" height="40" isPrintWhenDetailOverflows="true" uuid="d3ce88b2-8afa-459c-b206-284dee0de7ae"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="DejaVu Sans" size="7"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IVF}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="461" y="0" width="61" height="40" isPrintWhenDetailOverflows="true" uuid="5045f272-4384-4e51-9891-c991b5e61691"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{problem_meds_msg_others}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="522" y="0" width="50" height="40" isPrintWhenDetailOverflows="true" uuid="b2db8475-5320-46e2-b877-41862f754411"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{actions}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="31" y="19" width="33" height="20" isPrintWhenDetailOverflows="true" uuid="0e484ca1-9cc9-4338-b140-38972ccd0194"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="30" y="1" width="36" height="18" isPrintWhenDetailOverflows="true" uuid="9bb2893e-ffb1-4ca5-a45a-840fb3671550"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hrn}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="12">
+			<textField>
+				<reportElement x="482" y="0" width="50" height="12" uuid="a8d84820-4bee-4abd-a84e-4e6e830d0e2a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="532" y="0" width="40" height="12" uuid="58f11239-d427-4e74-a82f-5f0ef46b6f6b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="113" height="12" uuid="9e9f9378-0c5c-4930-a817-74f2ccf05756"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[SPMC-F-NSG-05]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="228" y="0" width="113" height="12" uuid="a4064862-612b-4209-aa6b-2f3418e40a58"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Effectivity: October 1, 2014]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="38" height="12" uuid="7f7a4349-8f79-489f-845c-c868f3452c77"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Rev. 1]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

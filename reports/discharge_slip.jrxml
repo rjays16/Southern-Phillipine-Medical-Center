@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="adjustment" language="groovy" pageWidth="612" pageHeight="1008" whenNoDataType="AllSectionsNoDetail" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="3.4522712143931797"/>
+	<property name="ireport.x" value="932"/>
+	<property name="ireport.y" value="2597"/>
+	<parameter name="hospcountry" class="java.lang.String"/>
+	<parameter name="hospagency" class="java.lang.String"/>
+	<parameter name="hospname" class="java.lang.String"/>
+	<parameter name="hospaddr" class="java.lang.String"/>
+	<parameter name="imagepath" class="java.lang.String">
+		<defaultValueExpression><![CDATA["D:\\srv\\bphreports\\BPH Logo.jpg"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="patient" class="java.lang.String"/>
+	<parameter name="age" class="java.lang.String"/>
+	<parameter name="sex" class="java.lang.String"/>
+	<parameter name="status" class="java.lang.String"/>
+	<parameter name="hrn" class="java.lang.String"/>
+	<parameter name="diagnosis" class="java.lang.String"/>
+	<parameter name="opd_on" class="java.lang.String"/>
+	<parameter name="er_nod" class="java.lang.String"/>
+	<parameter name="department" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="time" class="java.lang.String"/>
+	<parameter name="attending_physician" class="java.lang.String"/>
+	<parameter name="medications" class="java.lang.String"/>
+	<parameter name="imagedohpath" class="java.lang.String"/>
+	<parameter name="case_no" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="field1" class="java.lang.String"/>
+	<variable name="itemcount" class="java.lang.Integer" incrementType="Column" calculation="Count">
+		<variableExpression><![CDATA[$V{itemcount}+1]]></variableExpression>
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="82" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="-2" width="572" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Times New Roman" size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{hospcountry}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="13" width="572" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Times New Roman" size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{hospagency}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="20" width="572" height="17"/>
+				<box bottomPadding="2"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" lineSpacing="Single">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{hospname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="46" width="572" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Times New Roman" size="15" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[ER DISCHARGE SLIP]]></text>
+			</staticText>
+			<image>
+				<reportElement x="450" y="-20" width="153" height="82"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{imagepath}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="32" width="572" height="20"/>
+				<box topPadding="2"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{hospaddr}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="45" y="-10" width="134" height="67"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{imagedohpath}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="868">
+			<staticText>
+				<reportElement x="7" y="43" width="42" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Patient:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="225" y="43" width="50" height="17"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Age/Sex:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="43" width="41" height="15"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[ Status: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="43" width="31" height="15"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[HRN:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="61" width="56" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Diagnosis:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="85" width="350" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Home Medications: 	(Please use backspace or extra sheet if needed)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="233" width="117" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Follow Up at OPD on:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="234" width="175" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Name & Signature of ER NOD:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="47" y="57" width="178" height="1"/>
+			</line>
+			<line>
+				<reportElement x="75" y="67" width="464" height="1"/>
+			</line>
+			<line>
+				<reportElement x="272" y="56" width="78" height="1"/>
+			</line>
+			<line>
+				<reportElement x="388" y="56" width="64" height="1"/>
+			</line>
+			<line>
+				<reportElement x="485" y="56" width="55" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="6" y="250" width="110" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Department:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="250" width="29" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="438" y="250" width="48" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[ Time:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="267" width="215" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Name & Signature Attending Physician:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="123" y="245" width="138" height="1"/>
+			</line>
+			<line>
+				<reportElement x="437" y="245" width="101" height="1"/>
+			</line>
+			<line>
+				<reportElement x="76" y="263" width="188" height="1"/>
+			</line>
+			<line>
+				<reportElement x="298" y="263" width="139" height="1"/>
+			</line>
+			<line>
+				<reportElement x="472" y="263" width="67" height="1"/>
+			</line>
+			<line>
+				<reportElement x="220" y="280" width="322" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="2" y="280" width="570" height="29"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Times New Roman" size="14" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[PAHIBALO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="300" width="572" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Walay konsultasyon kada Sabado, Domingo ug legal holidays. EMERGENCY na mga kaso lamang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="317" width="572" height="21"/>
+				<textElement textAlignment="Center" lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[ang pag-atimanon sa sulod sa Emergency Room.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="336" width="572" height="1" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="22" y="341" width="123" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<text><![CDATA[Effectivity: October 1, 2013]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="341" width="30" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<text><![CDATA[Rev. 0]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="466" y="341" width="55" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<text><![CDATA[Page 1 of 1]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="50" y="42" width="175" height="15"/>
+				<textElement verticalAlignment="Bottom" lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="277" y="43" width="51" height="15"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{age}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="299" y="43" width="48" height="14"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{sex}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="384" y="43" width="68" height="14"/>
+				<textElement textAlignment="Center" lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{status}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="480" y="43" width="58" height="15"/>
+				<textElement textAlignment="Center" lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{hrn}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="75" y="57" width="462" height="17"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{diagnosis}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="117" y="231" width="139" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{opd_on}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="471" y="248" width="69" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{time}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="224" y="267" width="339" height="18"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{attending_physician}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="99" y="100" width="440" height="133"/>
+				<textElement verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{medications}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="391" y="-3" width="181" height="40"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39 (Extended)" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA[$P{case_no}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<staticText>
+				<reportElement x="292" y="42" width="7" height="22"/>
+				<textElement lineSpacing="Single">
+					<font fontName="DejaVu Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[/]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="440" y="26" width="77" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{case_no}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="418" y="-24" width="147" height="26"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="DejaVu Sans" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[SPMC-F-MRI-20F]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="351" width="572" height="35"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="298" y="514" width="7" height="22"/>
+				<textElement lineSpacing="Single">
+					<font fontName="DejaVu Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[/]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="789" width="572" height="21"/>
+				<textElement textAlignment="Center" lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[ang pag-atimanon sa sulod sa Emergency Room.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="53" y="529" width="178" height="1"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="325" y="722" width="91" height="17"/>
+				<textElement textAlignment="Center" lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="399" width="572" height="17"/>
+				<box bottomPadding="2"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" lineSpacing="Single">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{hospname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="390" width="572" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Times New Roman" size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{hospagency}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="397" y="467" width="181" height="40"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39 (Extended)" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA[$P{case_no}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<staticText>
+				<reportElement x="6" y="772" width="572" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Walay konsultasyon kada Sabado, Domingo ug legal holidays. EMERGENCY na mga kaso lamang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="426" width="572" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Times New Roman" size="15" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[ER DISCHARGE SLIP]]></text>
+			</staticText>
+			<line>
+				<reportElement x="394" y="528" width="64" height="1"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="446" y="496" width="77" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{case_no}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="8" y="749" width="570" height="32"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Times New Roman" size="14" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[PAHIBALO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="231" y="515" width="50" height="17"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Age/Sex:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="445" y="717" width="99" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="281" y="813" width="30" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<text><![CDATA[Rev. 0]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="353" y="515" width="41" height="15"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[ Status: ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="45" y="377" width="134" height="67"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{imagedohpath}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="4" y="413" width="572" height="20"/>
+				<box topPadding="2"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{hospaddr}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="28" y="813" width="123" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<text><![CDATA[Effectivity: October 1, 2013]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="706" width="122" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Follow Up at OPD on:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="706" width="175" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Name & Signature of ER NOD:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="491" y="528" width="55" height="1"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="99" y="572" width="446" height="133"/>
+				<textElement verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{medications}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="82" y="722" width="186" height="20"/>
+				<textElement textAlignment="Center" lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{department}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="55" y="513" width="176" height="15"/>
+				<textElement verticalAlignment="Bottom" lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="557" width="350" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Home Medications: 	(Please use backspace or extra sheet if needed)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="278" y="528" width="78" height="1"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="134" y="703" width="138" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{opd_on}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="461" y="515" width="31" height="15"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[HRN:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1" y="375" width="572" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Times New Roman" size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{hospcountry}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Opaque" x="6" y="808" width="572" height="1" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement x="486" y="515" width="58" height="15"/>
+				<textElement textAlignment="Center" lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{hrn}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="472" y="813" width="55" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<text><![CDATA[Page 1 of 1]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="471" y="720" width="74" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{time}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="80" y="529" width="462" height="17"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{diagnosis}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="431" y="700" width="115" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{er_nod}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="722" width="110" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Department:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="515" width="42" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Patient:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="390" y="516" width="68" height="14"/>
+				<textElement textAlignment="Center" lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{status}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="450" y="368" width="153" height="82"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{imagepath}]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="305" y="515" width="48" height="14"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{sex}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="82" y="735" width="188" height="1"/>
+			</line>
+			<line>
+				<reportElement x="304" y="735" width="133" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="276" y="722" width="27" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="424" y="445" width="147" height="26"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="DejaVu Sans" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[SPMC-F-MRI-20F]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="739" width="215" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Name & Signature Attending Physician:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="533" width="56" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Diagnosis:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="472" y="735" width="73" height="1"/>
+			</line>
+			<line>
+				<reportElement x="81" y="548" width="464" height="1"/>
+			</line>
+			<line>
+				<reportElement x="227" y="752" width="322" height="1"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="283" y="515" width="51" height="15"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{age}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="438" y="722" width="48" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[ Time:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="134" y="717" width="133" height="1"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="230" y="739" width="323" height="18"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{attending_physician}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="75" y="77" width="464" height="1"/>
+			</line>
+			<line>
+				<reportElement x="81" y="538" width="464" height="1"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="426" y="228" width="115" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{er_nod}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="76" y="250" width="186" height="20"/>
+				<textElement textAlignment="Center" lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{department}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="321" y="250" width="91" height="17"/>
+				<textElement textAlignment="Center" lineSpacing="Single">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+</jasperReport>

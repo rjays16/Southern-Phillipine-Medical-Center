@@ -1,0 +1,85 @@
+/* 
+    Created on : 12 2, 19, 2:49:02 PM
+    Author     : Bong
+*/
+
+.styled {
+    border-top: 1px solid #96d1f8;
+    background: #8c9194;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d0d6d9), to(#8c9194));
+    background: -webkit-linear-gradient(top, #d0d6d9, #8c9194);
+    background: -moz-linear-gradient(top, #d0d6d9, #8c9194);
+    background: -ms-linear-gradient(top, #d0d6d9, #8c9194);
+    background: -o-linear-gradient(top, #d0d6d9, #8c9194);
+    padding: 4.5px 9px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: black;
+    font-size: 24px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.styled:hover {   
+    border-top-color: #2a90d4;
+    background: #2a90d4;
+    color: #ccc;
+    cursor: pointer;   
+}
+
+.styled:active {
+    border-top-color: #23506e;
+    background: #23506e;
+}
+
+button .text { 
+    width: 80%; 
+    display: inline-block; 
+    text-align:center; 
+    font-size: 15px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+button .iconok { 
+    width: 20%; 
+    display: inline-block;          
+    background: url("../image/fingerprint_checked.png"); 
+    background-repeat: no-repeat;     
+    background-size: contain;   
+    vertical-align: middle;
+}
+
+button .iconunknown { 
+    width: 20%; 
+    display: inline-block; 
+    background: url("../image/fingerprint_unknown.png");
+    background-repeat: no-repeat;     
+    background-size: contain;   
+    vertical-align: middle;
+}
+
+.fpbutton {width: 200px;}
+
+.handsOutline, .fingers, .frame{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    border: 0px;
+}
+
+.handsOutline{
+    z-index: 1;
+}
+
+.fingers {
+    z-index: 2;
+}
+
+

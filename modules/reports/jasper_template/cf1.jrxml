@@ -1,0 +1,1896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cf1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.2100000000000017"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="15"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1"/>
+	<parameter name="member_gender" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="member_pin" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="name_last" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="name_first" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="name_middle" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="suffix" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="birth_date" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="series_no" class="java.lang.String"/>
+	<parameter name="unit" class="java.lang.String"/>
+	<parameter name="building_name" class="java.lang.String"/>
+	<parameter name="house_no" class="java.lang.String"/>
+	<parameter name="street" class="java.lang.String"/>
+	<parameter name="subdivision" class="java.lang.String"/>
+	<parameter name="barangay" class="java.lang.String"/>
+	<parameter name="city" class="java.lang.String"/>
+	<parameter name="province" class="java.lang.String"/>
+	<parameter name="zipcode" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="landline_no" class="java.lang.String"/>
+	<parameter name="mobile_no" class="java.lang.String"/>
+	<parameter name="country" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="email_address" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="patient_name_last" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="patient_name_first" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="patient_name_middle" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="patient_suffix" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="patient_birth_date" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="patient_gender" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="patient_pin" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="patient_relationship" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pen" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="emp_contact" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="emp_business_name" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="patient_is_member" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="phic_logo" class="java.lang.String"/>
+	<parameter name="member_gender_f" class="java.lang.String"/>
+	<parameter name="member_gender_m" class="java.lang.String"/>
+	<parameter name="patient_is_member_y" class="java.lang.String"/>
+	<parameter name="patient_is_member_n" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from smed_user limit 1]]>
+	</queryString>
+	<field name="id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="username" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="password" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="personnel_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="default_authitem" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="phic_logo" class="java.lang.String"/>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<rectangle>
+				<reportElement positionType="Float" x="426" y="340" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="535" y="340" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="522" y="340" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="439" y="340" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="306" y="327" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="345" y="327" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="358" y="327" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="489" y="46" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="424" y="46" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="398" y="46" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="541" y="46" width="13" height="11"/>
+			</rectangle>
+			<line>
+				<reportElement positionType="Float" x="0" y="133" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="0" y="297" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="0" y="119" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="61" width="321" height="10"/>
+				<textElement markup="html">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[PLEASE WRITE IN CAPITAL <b>LETTERS</b> AND <b>CHECK </b>THE APPROPRIATE BOXES.]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="0" y="321" width="555" height="1"/>
+			</line>
+			<rectangle>
+				<reportElement positionType="Float" x="385" y="46" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="121" y="175" width="75" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Name Extension {JR/SR/III}]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="428" y="7" width="48" height="22"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CF1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="67" y="175" width="33" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[First Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="107" width="527" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[FALSE / INCORRECT INFORMATION OR MISREPRESENTATION SHALL BE SUBJECT TO CRIMINAL, CIVIL OR ADMISITRATIVE LIABILITIES.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="7" y="175" width="33" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Last Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="134" width="216" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1. PhilHealth Identification Number (PIN) of Member:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="253" y="175" width="107" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[(example: DELA CRUZ JUAN JR SIPAG)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="71" width="570" height="10"/>
+				<textElement markup="html">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[For <b>local availment</b>, this form together with other PhilHealth claim forms and other supporting documents should be filed within 60 days from date of discharge.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="403" y="35" width="99" height="10"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[revised November 2013]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="423" y="26" width="59" height="14"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(Claim Form 1)]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="0" y="295" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="121" width="555" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PART I - MEMBER INFORMATION]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="463" y="46" width="13" height="11"/>
+			</rectangle>
+			<line>
+				<reportElement positionType="Float" x="1" y="173" width="352" height="1"/>
+			</line>
+			<rectangle>
+				<reportElement positionType="Float" x="476" y="46" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="1" y="297" width="553" height="22"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PART II - PATIENT INFORMATION
+(To be filled out only if the patient is a dependent)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="81" width="538" height="10"/>
+				<textElement markup="html">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[For <b>availment of benefits abroad</b>, this form together with other supporting documents should be filed within 180 days from date of discharge.]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="0" y="319" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="0" y="121" width="555" height="1"/>
+			</line>
+			<rectangle>
+				<reportElement positionType="Float" x="437" y="46" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="204" y="175" width="48" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Middle Name]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="502" y="46" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="343" y="0" width="212" height="10"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[This form may be reproduced and is NOT FOR SALE]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="450" y="46" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="50" width="106" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IMPORTANT REMIDERS:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="411" y="46" width="13" height="11"/>
+			</rectangle>
+			<line>
+				<reportElement positionType="Float" x="0" y="131" width="555" height="1"/>
+			</line>
+			<rectangle>
+				<reportElement positionType="Float" x="515" y="46" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="528" y="46" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="345" y="46" width="35" height="10"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Series #]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="383" y="45" width="172" height="7" forecolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="89" width="538" height="18"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Representative of teh Health Care Institution (HCI) shall assist the member/authorized representative in filling out this form.
+All information required in this form are necessary. Claim forms with incomplete information shall not be processed.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="470" y="164" width="17" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[day]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="359" y="153" width="68" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3. Date of Birth: ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="426" y="153" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="522" y="153" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="439" y="153" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="428" y="164" width="20" height="6"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[month]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="516" y="164" width="17" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[year]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="496" y="153" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="474" y="153" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="535" y="153" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="461" y="153" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="509" y="153" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="425" y="152" width="128" height="8" forecolor="#FFFFFF"/>
+			</rectangle>
+			<line>
+				<reportElement positionType="Float" x="455" y="158" width="3" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="490" y="158" width="3" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="-1" y="153" width="88" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2. Name of Member:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="219" y="137" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="232" y="137" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="269" y="137" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="256" y="137" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="295" y="137" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="282" y="137" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="308" y="137" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="321" y="137" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="334" y="137" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="347" y="137" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="360" y="137" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="383" y="137" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="216" y="135" width="190" height="8" forecolor="#FFFFFF"/>
+			</rectangle>
+			<line>
+				<reportElement positionType="Float" x="249" y="142" width="3" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="376" y="142" width="3" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="1" y="183" width="78" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4. Mailing Address:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="11" y="215" width="56" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Unit/Room No., Floor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="172" y="215" width="66" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Lot/House/Block/Bldg. No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="307" y="215" width="49" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Subdivision/Village]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="2" y="213" width="353" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="101" y="215" width="60" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Building Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="252" y="215" width="25" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Street]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="242" width="45" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Barangay]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="87" y="242" width="60" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[City/ Municipality]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="1" y="240" width="353" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="239" y="242" width="25" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Country]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="171" y="242" width="38" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Province]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="301" y="242" width="35" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Zip Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="451" y="184" width="33" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Female]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="393" y="183" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="435" y="183" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="410" y="184" width="24" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Male]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="360" y="183" width="31" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[5. Sex:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="7" y="266" width="130" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Landline No. (Area Code + Tel. No.):]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="134" y="275" width="105" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="-1" y="251" width="99" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6. Contact Information:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="243" y="266" width="43" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Mobile No.:]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="286" y="274" width="105" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="397" y="265" width="58" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Email Address: ]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="448" y="273" width="105" height="1"/>
+			</line>
+			<rectangle>
+				<reportElement positionType="Float" x="209" y="282" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="225" y="283" width="122" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[No, Proceed to Part II]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="120" y="283" width="82" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Yes, Proceed to Part III]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="282" width="106" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[7. Patient is the member?]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="104" y="282" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="267" y="327" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="7" y="372" width="33" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Last Name]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="509" y="340" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="230" y="327" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="394" y="327" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="319" y="327" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="434" y="382" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="474" y="340" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="496" y="340" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="470" y="351" width="17" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[day]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="461" y="340" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="425" y="339" width="128" height="8" forecolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="280" y="327" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="243" y="327" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="325" width="222" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1. PhilHealth Identification Number (PIN) of Dependent:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="450" y="383" width="33" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Female]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="332" y="327" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="293" y="327" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="371" y="327" width="13" height="11"/>
+			</rectangle>
+			<line>
+				<reportElement positionType="Float" x="1" y="370" width="352" height="1"/>
+			</line>
+			<rectangle>
+				<reportElement x="227" y="325" width="190" height="8" forecolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="409" y="383" width="24" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Male]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="490" y="345" width="3" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="455" y="345" width="3" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="204" y="372" width="48" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Middle Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="67" y="372" width="33" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[First Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="359" y="340" width="68" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3. Date of Birth: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="516" y="351" width="17" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[year]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="359" y="382" width="31" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[5. Sex:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="121" y="372" width="75" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Name Extension {JR/SR/III}]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="428" y="351" width="20" height="6"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[month]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="-1" y="340" width="88" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2. Name of Patient:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="253" y="372" width="107" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[(example: DELA CRUZ JUAN JR SIPAG)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="392" y="382" width="13" height="11"/>
+			</rectangle>
+			<line>
+				<reportElement positionType="Float" x="260" y="332" width="3" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="387" y="332" width="3" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="172" y="384" width="33" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Parent]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="156" y="383" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="114" y="383" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="131" y="384" width="24" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Child]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="1" y="383" width="113" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4. Relationship to Member: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="221" y="384" width="33" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Spouse]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="205" y="383" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="398" width="555" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PART III - MEMBER CERTIFICATION]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="0" y="408" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="0" y="396" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="0" y="398" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="0" y="410" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="19" y="414" width="468" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Under the penalty of law, I attest that the information I provided in this Form are true and accurate to the best of my knowledge.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="185" y="459" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="192" y="470" width="17" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[year]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="172" y="459" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="102" y="459" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="146" y="470" width="17" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[day]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="41" y="445" width="211" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="50" y="459" width="50" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date Signed: ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="150" y="459" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="104" y="470" width="20" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[month]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="211" y="459" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="41" y="447" width="211" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="6" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Signature Over Printed Name of Member]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="115" y="459" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="198" y="459" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="137" y="459" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="101" y="458" width="128" height="8" forecolor="#FFFFFF"/>
+			</rectangle>
+			<line>
+				<reportElement positionType="Float" x="131" y="464" width="3" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="166" y="464" width="3" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="416" y="469" width="17" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[day]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="385" y="458" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="442" y="458" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="320" y="458" width="50" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date Signed: ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="407" y="458" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="372" y="458" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="311" y="446" width="211" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="6" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Signature Over Printed Name of Member's Representative]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="455" y="458" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="468" y="458" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="462" y="469" width="17" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[year]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="374" y="469" width="24" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[month]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="481" y="458" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="420" y="458" width="13" height="11"/>
+			</rectangle>
+			<line>
+				<reportElement positionType="Float" x="311" y="444" width="211" height="1"/>
+			</line>
+			<rectangle>
+				<reportElement positionType="Float" x="371" y="457" width="128" height="8" forecolor="#FFFFFF"/>
+			</rectangle>
+			<line>
+				<reportElement positionType="Float" x="436" y="463" width="3" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="401" y="463" width="3" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="7" y="496" width="160" height="41"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[If member/representative is unable to write, put right thumbmark. Member/representative should be assisted by an HCI representative. Check the appropriate box:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="88" y="538" width="61" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Representative]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="72" y="537" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="11" y="537" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="28" y="538" width="39" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Member ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="171" y="496" width="81" height="52"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="257" y="496" width="116" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Relationship of the representative to the member:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="257" y="525" width="96" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Reason for signing on behalf of the memeber: ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="370" y="523" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="370" y="497" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="386" y="498" width="31" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Spouse]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="370" y="536" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="370" y="510" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="386" y="511" width="31" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Sibling]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="386" y="537" width="58" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Other reasons: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="386" y="524" width="91" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Memeber is incapacitated]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="427" y="496" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="443" y="497" width="31" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Child]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="427" y="509" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="443" y="510" width="57" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Others, Specify]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="497" y="497" width="31" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Parent]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="481" y="496" width="13" height="11"/>
+			</rectangle>
+			<line>
+				<reportElement positionType="Float" x="438" y="544" width="103" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="499" y="519" width="51" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="0" y="556" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="556" width="555" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PART IV - EMPLOYER'S CERTIFICATION (for employed members only)]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="0" y="554" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="0" y="568" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="0" y="566" width="555" height="1"/>
+			</line>
+			<rectangle>
+				<reportElement positionType="Float" x="275" y="576" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="301" y="576" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="197" y="576" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="324" y="576" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="210" y="576" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="572" width="153" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1. PhilHealth Employer Number (PEN):]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="173" y="576" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="262" y="576" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="288" y="576" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="236" y="576" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="160" y="576" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="249" y="576" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="223" y="576" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="157" y="575" width="190" height="8" forecolor="#FFFFFF"/>
+			</rectangle>
+			<line>
+				<reportElement positionType="Float" x="190" y="581" width="3" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="317" y="581" width="3" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="437" y="584" width="99" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="342" y="573" width="99" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2. Contact Information:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="1" y="592" width="84" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3. Business Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="55" y="620" width="467" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="6" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Business Name of Employer]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="55" y="618" width="467" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="1" y="630" width="146" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4. CERTIFICATION OF EMPLOYER:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="4" y="642" width="551" height="41"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[This is to certify that all monthly premium contributions for and in behalf of the member, while employed in this company, including the applicable three (3) monthly premium contributions within the past six (6) months period prior to the first day of this confinement, have been deducted/collected and remitted to PhilHealth, and that information supplied by the member or his/her representative on Part I are consistent with our available records.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="189" y="696" width="163" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="6" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Official Capacity/ Designation]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="189" y="694" width="163" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="3" y="697" width="163" height="21"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="6" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Signature Over Printed Name of Employer/ Authorized Representative]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="3" y="695" width="163" height="1"/>
+			</line>
+			<rectangle>
+				<reportElement positionType="Float" x="535" y="686" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="374" y="686" width="50" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date Signed: ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="474" y="686" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="461" y="686" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="522" y="686" width="13" height="11"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="428" y="697" width="20" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[month]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="470" y="697" width="17" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[day]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="516" y="697" width="17" height="6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="5" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[year]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="439" y="686" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="496" y="686" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="426" y="686" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="509" y="686" width="13" height="11"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="425" y="685" width="128" height="8" forecolor="#FFFFFF"/>
+			</rectangle>
+			<line>
+				<reportElement positionType="Float" x="455" y="691" width="3" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="490" y="691" width="3" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="718" width="555" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PART V - FOR PHILHEALTH USE ONLY]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="0" y="728" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="0" y="730" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="0" y="718" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="0" y="716" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="746" width="62" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date Received: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" positionType="Float" x="73" y="737" width="142" height="20" backcolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[LHIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" positionType="Float" x="73" y="757" width="142" height="20" backcolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[PRO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" positionType="Float" x="241" y="737" width="142" height="20" backcolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="219" y="746" width="20" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[By:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" positionType="Float" x="241" y="757" width="142" height="20" backcolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[LHIO/PRO Signature Over Printed Name]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="220" y="137" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{member_pin}!=""? $P{member_pin}.charAt(0):'']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="233" y="137" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{member_pin}!=""? $P{member_pin}.charAt(1):'']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="256" y="137" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{member_pin}!=""? $P{member_pin}.charAt(2):'']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="269" y="137" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{member_pin}!=""? $P{member_pin}.charAt(3):'']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="282" y="137" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{member_pin}!=""? $P{member_pin}.charAt(4):'']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="295" y="137" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{member_pin}!=""? $P{member_pin}.charAt(5):'']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="347" y="137" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{member_pin}!=""? $P{member_pin}.charAt(9):'']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="334" y="137" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{member_pin}!=""? $P{member_pin}.charAt(8):'']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="308" y="137" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{member_pin}!=""? $P{member_pin}.charAt(6):'']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="321" y="137" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{member_pin}!=""? $P{member_pin}.charAt(7):'']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="360" y="137" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{member_pin}!=""? $P{member_pin}.charAt(10):'']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="384" y="137" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{member_pin}!=""? $P{member_pin}.charAt(11):'']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="230" y="327" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_pin}!=""? $P{patient_pin}.charAt(0): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="243" y="327" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_pin}!=""? $P{patient_pin}.charAt(1): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="266" y="327" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_pin}!=""? $P{patient_pin}.charAt(2): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="279" y="327" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_pin}!=""? $P{patient_pin}.charAt(3): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="292" y="327" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_pin}!=""? $P{patient_pin}.charAt(4): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="305" y="327" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_pin}!=""? $P{patient_pin}.charAt(5): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="357" y="327" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_pin}!=""? $P{patient_pin}.charAt(9): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="344" y="327" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_pin}!=""? $P{patient_pin}.charAt(8): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="318" y="327" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_pin}!=""? $P{patient_pin}.charAt(6): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="331" y="327" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_pin}!=""? $P{patient_pin}.charAt(7): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="370" y="327" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_pin}!=""? $P{patient_pin}.charAt(10): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="394" y="327" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_pin}!=""? $P{patient_pin}.charAt(11): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="161" y="576" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{pen}!=""? $P{pen}.charAt(0): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="174" y="576" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{pen}!=""? $P{pen}.charAt(1): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="197" y="576" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{pen}!=""? $P{pen}.charAt(2): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="210" y="576" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{pen}!=""? $P{pen}.charAt(3): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="223" y="576" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{pen}!=""? $P{pen}.charAt(4): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="236" y="576" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{pen}!=""? $P{pen}.charAt(5): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="288" y="576" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{pen}!=""? $P{pen}.charAt(9): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="275" y="576" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{pen}!=""? $P{pen}.charAt(8): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="249" y="576" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{pen}!=""? $P{pen}.charAt(6): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="262" y="576" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{pen}!=""? $P{pen}.charAt(7): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="301" y="576" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{pen}!=""? $P{pen}.charAt(10): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="325" y="576" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{pen}!=""? $P{pen}.charAt(11): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="426" y="340" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_birth_date}!=""? $P{patient_birth_date}.charAt(0): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="523" y="340" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_birth_date}!=""? $P{patient_birth_date}.charAt(8): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="439" y="340" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_birth_date}!=""? $P{patient_birth_date}.charAt(1): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="510" y="340" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_birth_date}!=""? $P{patient_birth_date}.charAt(7): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="461" y="340" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_birth_date}!=""? $P{patient_birth_date}.charAt(3): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="536" y="340" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_birth_date}!=""? $P{patient_birth_date}.charAt(9): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="474" y="340" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_birth_date}!=""? $P{patient_birth_date}.charAt(4): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="497" y="340" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_birth_date}!=""? $P{patient_birth_date}.charAt(6): '']]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="351" width="55" height="19"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_name_last}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="62" y="351" width="72" height="19"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_name_first}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="136" y="351" width="38" height="19"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_suffix}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="196" y="351" width="66" height="19"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_name_middle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="1" y="163" width="55" height="10"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{name_last}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="197" y="163" width="66" height="10"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{name_middle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="63" y="163" width="72" height="10"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{name_first}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="137" y="163" width="38" height="10"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{suffix}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="474" y="153" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{birth_date}.charAt(4)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="510" y="153" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{birth_date}.charAt(7)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="523" y="153" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{birth_date}.charAt(8)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="461" y="153" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{birth_date}.charAt(3)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="426" y="153" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{birth_date}.charAt(0)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="497" y="153" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{birth_date}.charAt(6)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="536" y="153" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{birth_date}.charAt(9)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="439" y="153" width="13" height="11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{birth_date}.charAt(1)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="243" y="194" width="57" height="19"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{street}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="168" y="194" width="73" height="19"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{house_no}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="95" y="194" width="72" height="19"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{building_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="1" y="194" width="94" height="19"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{unit}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="300" y="192" width="60" height="21"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{subdivision}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="1" y="221" width="72" height="19"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{barangay}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="73" y="221" width="94" height="19"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{city}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="232" y="221" width="63" height="19"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{country}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="168" y="221" width="61" height="19"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{province}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="300" y="221" width="57" height="19"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{zipcode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="135" y="265" width="99" height="10"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{landline_no}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="289" y="264" width="99" height="10"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{mobile_no}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="457" y="262" width="96" height="10"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{email_address}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="57" y="603" width="465" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{emp_business_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="443" y="573" width="107" height="9"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="DejaVu Sans" size="7" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{emp_contact}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="0" width="156" height="45"/>
+				<imageExpression class="java.lang.String"><![CDATA["C:\\xampp\\htdocs\\hisspmc4dev\\images\\phic_logo.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="438" y="182" width="29" height="36"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{member_gender_f}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="396" y="182" width="24" height="28"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{member_gender_m}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="283" width="42" height="15"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_is_member_y}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="209" y="281" width="41" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{patient_is_member_n}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
