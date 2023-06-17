@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE eCLAIMS SYSTEM "eClaimsDef_1.7.3.dtd">
+<eCLAIMS pUserName="" pUserPassword="" pHospitalCode="" pHospitalEmail="">
+  <eTRANSMITTAL pHospitalTransmittalNo="001" pTotalClaims="1">
+    <CLAIM pClaimNumber="2014000010" pTrackingNumber="" pPhilhealthClaimType="ALL-CASE-RATE" pPatientType="I" pIsEmergency="N">
+      <CF1 pMemberPIN="12-3-4" pMemberLastName="MATUNOG" pMemberFirstName="JASPER IAN" pMemberMiddleName="QUINONES" pMemberSuffix="" pMemberBirthDate="05-28-1979" pMemberShipType="NO" pMailingAddress="TORIL, DAVAO CITY 8000, DAVAO DEL SUR, REGION XI" pZipCode="8000" pMemberSex="M" pEmailAddress="" pLandlineNo="" pMobileNo="" pPatientIs="M" pPatientPIN="12-3-4" pPatientLastName="MATUNOG" pPatientFirstName="MATUNOG, JASPER IAN Q." pPatientSuffix="" pPatientMiddleName="QUINONES" pPatientBirthDate="05-28-1979" pPatientSex="M" pPEN="" pEmployerName=""/>
+      <CF2 pPatientReferred="N" pReferredIHCPAccreCode="NA" pAdmissionDate="01-01-1970" pAdmissionTime="01:39:00AM" pDischargeDate="05-06-2014" pDischargeTime="11:11:00AM" pDisposition="R" pExpiredDate="" pExpiredTime="" pReferralIHCPAccreCode="" pReferralReasons="" pAccommodationType="P">
+        <DIAGNOSIS pAdmissionDiagnosis="SA">
+          <DISCHARGE pDischargeDiagnosis="">
+            <ICDCODE pICDCode=""/>
+            <RVSCODES pRelatedProcedure="MASTOTOMY W/ EXPLORATION OR DRAINAGE OF ABSCESS, DEEP" pRVSCode="19020" pProcedureDate="04-01-2014" pLaterality="N"/>
+          </DISCHARGE>
+          <DISCHARGE pDischargeDiagnosis="">
+            <ICDCODE pICDCode=""/>
+            <RVSCODES pRelatedProcedure="MASTECTOMY, PARTIAL;" pRVSCode="19160" pProcedureDate="05-01-2014" pLaterality="B"/>
+          </DISCHARGE>
+        </DIAGNOSIS>
+        <SPECIAL>
+          <MCP pCheckUpDate1="" pCheckUpDate2="" pCheckUpDate3="" pCheckUpDate4=""/>
+          <TBDOTS pTBType="I" pNTPCardNo="SAMPLE"/>
+          <ABP pDay0ARV="" pDay3ARV="" pDay7ARV="" pRIG="" pABPOthers="" pABPSpecify=""/>
+          <NCP pEssentialNewbornCare="N" pNewbornHearingScreeningTest="N" pNewbornScreeningTest="Y" pFilterCardNo="0">
+            <ESSENTIAL pDrying="N" pSkinToSkin="N" pCordClamping="N" pProphylaxis="N" pWeighing="N" pVitaminK="N" pBCG="N" pNonSeparation="N" pHepatitisB="N"/>
+          </NCP>
+          <HIVAIDS pLaboratoryNumber=""/>
+        </SPECIAL>
+        <PROFESSIONALS pDoctorAccreCode="--" pDoctorLastName="VEGA" pDoctorFirstName="LEOPOLDO" pDoctorMiddleName="JUMALON" pDoctorSuffix="" pWithCoPay="N" pDoctorCoPay="0.00" pDoctorSignDate="05-20-2014"/>
+        <PROFESSIONALS pDoctorAccreCode="--" pDoctorLastName="VEGA" pDoctorFirstName="LEOPOLDO" pDoctorMiddleName="JUMALON" pDoctorSuffix="" pWithCoPay="Y" pDoctorCoPay="2600.00" pDoctorSignDate="05-20-2014"/>
+        <CONSUMPTION pEnoughBenefits="N">
+          <HCIFEES pTotalActualCharges="12665.00" pDiscount="0" pPhilhealthBenefit="12665.00" pTotalAmount="0" pMemberPatient="Y" pHMO="N" pOthers="N"/>
+          <PROFFEES pTotalActualCharges="34200.00" pDiscount="0" pPhilhealthBenefit="20200.00" pTotalAmount="14000" pMemberPatient="Y" pHMO="N" pOthers="N"/>
+          <PURCHASES pDrugsMedicinesSupplies="N" pDMSTotalAmount="0.00" pExaminations="N" pExamTotalAmount="0.00"/>
+        </CONSUMPTION>
+      </CF2>
+      <ALLCASERATE>
+        <CASERATE pCaseRateCode="CR0002" pICDCode="" pRVSCode="19160" pCaseRateAmount="22000.00"/>
+        <CASERATE pCaseRateCode="CR0001" pICDCode="I60.3" pRVSCode="" pCaseRateAmount="38000.00"/>
+      </ALLCASERATE>
+      <DOCUMENTS>
+        <DOCUMENT pDocumentType="CAB" pDocumentURL="NA"/>
+      </DOCUMENTS>
+    </CLAIM>
+  </eTRANSMITTAL>
+</eCLAIMS>

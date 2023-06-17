@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/sticky/sticky.full.css" type="text/css" />
+    </head>
+    <body>
+        
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.min.js" integrity="sha512-/WwtKR6NnHomLo0O4w9QKc1INTPEJs7ko6u2aBTA1paPldhPl8LtXsi7a35iEZ69+9P5dcgVNESG8hrP4Y2t3w==" crossorigin="anonymous"></script> -->
+        <script type="text/javascript" src="./js/socket.io.js"></script>
+        <script type="text/javascript" src="./js/laravel-echo.js"></script>
+        <script type="text/javascript" src="./js/sprintf.js"></script>
+        <script type="text/javascript" src="./js/notification.js"></script>
+        <script type='text/javascript' src="./js/jquery/jquery-1.8.2.js"></script>
+        <script type="text/javascript" src="./js/sticky/sticky.full.js"></script>
+
+        <script>
+            // console.log('Socket config:',localStorage.getItem('notifSocketHost'), localStorage.getItem('notifToken'));
+            $j = jQuery.noConflict();
+            $j(document).ready(function(){
+                if(localStorage.getItem('notifToken')){
+                    window.parent['notification'] = new Notification(localStorage.getItem('notifSocketHost'), localStorage.getItem('notifToken'));
+                    window.parent['notification'].initAlerts();
+                    console.log('Initialized subscription');
+                }
+            });
+
+        </script>
+    </body>
+</html>
